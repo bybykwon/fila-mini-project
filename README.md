@@ -1,4 +1,4 @@
-# 프로젝트명
+# 프로젝트명 fila-mini-project
 
 KRDS (https://uiux.egovframe.go.kr/) 템플릿
 
