@@ -367,18 +367,6 @@
   background-color: #1d1d1d;
 }
 
-@font-face {
-  font-family: "GmarketSansMedium";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Cormorant";
-  src: url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap");
-  font-weight: normal;
-  font-style: normal;
-}
 /* **** area mixin ****/
 /* **** text attr ****/
 /* **** scroll ****/
@@ -3859,17 +3847,31 @@ input[type=checkbox] {
 }
 
 .typo {
+  white-space: nowrap;
   text-align: center;
-  font-size: 32px;
+  font-size: 40px;
   font-family: Cormorant;
   display: block;
 }
 
 .typo2 {
+  white-space: nowrap;
   text-align: center;
-  font-size: 32px;
+  font-size: 36px;
   font-family: Cormorant;
   display: block;
+}
+
+.inner.typo {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+}
+
+.inner.typo02 {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
 }
 
 .swiper-wrapper strong {
@@ -3917,6 +3919,81 @@ input[type=checkbox] {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+}
+
+#footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  display: block;
+  width: 80px;
+  height: 27px;
+}
+
+.footer-a {
+  display: block;
+  flex: 1;
+  font-size: 12px;
+  font-family: pretendard;
+}
+
+.footer-b {
+  display: block;
+  flex: 1;
+  font-size: 12px;
+  font-family: pretendard;
+}
+
+.footer-c {
+  margin-top: 12px;
+  display: block;
+  flex-basis: 100%;
+  font-size: 12px;
+  font-family: pretendard;
+}
+
+.sns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.facebook::before {
+  content: "\f086";
+  font-family: "line Awesome Free";
+  font-weight: 900;
+}
+
+.instagram::before {
+  content: "\f086";
+  font-family: "line Awesome Free";
+  font-weight: 900;
+}
+
+.youtube::before {
+  content: "\f086";
+  font-family: "line Awesome Free";
+  font-weight: 900;
+}
+
+.kakaotalk::before {
+  content: "\f086";
+  font-family: "line Awesome Free";
+  font-weight: 900;
+}
+
+.mailicon::before {
+  content: "\f0e0";
+  font-family: "line Awesome Free";
+  font-weight: 900;
+}
+
+.phoneicon::before {
+  content: "\f095";
+  font-family: "line Awesome Free";
+  font-weight: 900;
 }
 
 :root {
