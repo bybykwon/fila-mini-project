@@ -3921,6 +3921,15 @@ input[type=checkbox] {
   color: white;
 }
 
+.sec-bs__cont {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 7px 20px;
+  border: 1px solid white;
+  color: white;
+  opacity: 1;
+}
+
 #footer-inner {
   display: flex;
   flex-wrap: wrap;
@@ -3937,14 +3946,14 @@ input[type=checkbox] {
   display: block;
   flex: 1;
   font-size: 12px;
-  font-family: pretendard;
+  font-family: "Pretendard GOV", sans-serif;
 }
 
 .footer-b {
   display: block;
   flex: 1;
   font-size: 12px;
-  font-family: pretendard;
+  font-family: "Pretendard GOV", sans-serif;
 }
 
 .footer-c {
@@ -3952,7 +3961,7 @@ input[type=checkbox] {
   display: block;
   flex-basis: 100%;
   font-size: 12px;
-  font-family: pretendard;
+  font-family: "Pretendard GOV", sans-serif;
 }
 
 .sns {
