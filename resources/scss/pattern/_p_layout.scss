@@ -343,8 +343,8 @@ font-family: pretendard;}
 .txt.txt02 h3
 {text-align: center;
 	margin-top: 20px;
-	margin-bottom: 20px;}
-	.txt.txt02 p
+	margin-bottom: 20px;}	
+.txt.txt02 p
 	{display: flex;
 	text-align: left;
 	font-size: 15px;
@@ -353,18 +353,30 @@ font-family: pretendard;}
 	font-family: pretendard;}
 
 .typo
-{text-align: center;
-font-size: 32px;
+{white-space: nowrap;
+text-align: center;
+font-size: 40px;
 font-family: Cormorant;
 display: block;
 
 }
 .typo2
-{text-align: center;
-font-size: 32px;
+{white-space: nowrap;
+text-align: center;
+font-size: 36px;
 font-family:Cormorant;
 display: block;
 }
+
+.inner.typo
+{display: flex;
+	flex-basis: 100%;
+justify-content: center;}
+.inner.typo02
+{display: flex;
+	flex-basis: 100%;
+	justify-content: center;}
+
 
 
 .swiper-wrapper strong
@@ -406,5 +418,70 @@ object-fit: cover;}
 	left: 50%; 
 	transform: translate(-50%, -50%); 
 	color: white;
-	
+}
+
+#footer-inner
+{display: flex;
+	flex-wrap: wrap;
+justify-content: space-between;
+}
+.footer-logo {
+	display: block;
+	width: 80px;
+	height: 27px;
+}
+.footer-a{
+	display: block;
+	flex: 1;
+	font-size: 12px;
+	font-family: pretendard;
+}
+.footer-b{
+	display: block;
+	flex: 1;
+	font-size: 12px;
+	font-family: pretendard;
+}
+.footer-c{
+	margin-top: 12px;
+	display: block;
+	flex-basis: 100%;
+	font-size: 12px;
+	font-family: pretendard;
+}
+
+.sns {
+	display: flex;
+	justify-content: space-between;
+}
+// icons
+.facebook::before {
+  content: "\f086";
+  font-family: "line Awesome Free";
+	font-weight: 900;
+}
+.instagram::before {
+  content: "\f086";
+  font-family: "line Awesome Free";
+	font-weight: 900;
+}
+.youtube::before {
+  content: "\f086";
+  font-family: "line Awesome Free";
+	font-weight: 900;
+}
+.kakaotalk::before {
+  content: "\f086";
+  font-family: "line Awesome Free";
+	font-weight: 900;
+}
+.mailicon::before {
+  content: "\f0e0";
+  font-family: "line Awesome Free";
+	font-weight: 900;
+}
+.phoneicon::before {
+  content: "\f095";
+  font-family: "line Awesome Free";
+	font-weight: 900;
 }
