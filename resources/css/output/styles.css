@@ -3946,60 +3946,50 @@ input[type=checkbox] {
   display: block;
   flex: 1;
   font-size: 12px;
-  font-family: "Pretendard GOV", sans-serif;
+  font-family: pretendard;
 }
 
 .footer-b {
   display: block;
   flex: 1;
   font-size: 12px;
-  font-family: "Pretendard GOV", sans-serif;
+  font-family: pretendard;
 }
-
-.footer-c {
-  margin-top: 12px;
+.footer-b .footer-c {
   display: block;
-  flex-basis: 100%;
   font-size: 12px;
-  font-family: "Pretendard GOV", sans-serif;
+  font-family: pretendard;
 }
-
-.sns {
+.footer-b .sns {
   display: flex;
   justify-content: space-between;
 }
-
-.facebook::before {
+.footer-b .facebook::before {
   content: "\f086";
   font-family: "line Awesome Free";
   font-weight: 900;
 }
-
-.instagram::before {
+.footer-b .instagram::before {
   content: "\f086";
   font-family: "line Awesome Free";
   font-weight: 900;
 }
-
-.youtube::before {
+.footer-b .youtube::before {
   content: "\f086";
   font-family: "line Awesome Free";
   font-weight: 900;
 }
-
-.kakaotalk::before {
+.footer-b .kakaotalk::before {
   content: "\f086";
   font-family: "line Awesome Free";
   font-weight: 900;
 }
-
-.mailicon::before {
+.footer-b .mailicon::before {
   content: "\f0e0";
   font-family: "line Awesome Free";
   font-weight: 900;
 }
-
-.phoneicon::before {
+.footer-b .phoneicon::before {
   content: "\f095";
   font-family: "line Awesome Free";
   font-weight: 900;

@@ -460,47 +460,47 @@
   flex: 1;
   font-size: 12px;
   font-family: pretendard;
-	
-.footer-c {
-  margin-top: 12px;
-  display: block;
-  flex-basis: 100%;
-  font-size: 12px;
-  font-family: pretendard;
-}
 
-.sns {
-  display: flex;
-  justify-content: space-between;
-}
-// icons
-.facebook::before {
-  content: "\f086";
-  font-family: "line Awesome Free";
-  font-weight: 900;
-}
-.instagram::before {
-  content: "\f086";
-  font-family: "line Awesome Free";
-  font-weight: 900;
-}
-.youtube::before {
-  content: "\f086";
-  font-family: "line Awesome Free";
-  font-weight: 900;
-}
-.kakaotalk::before {
-  content: "\f086";
-  font-family: "line Awesome Free";
-  font-weight: 900;
-}
-.mailicon::before {
-  content: "\f0e0";
-  font-family: "line Awesome Free";
-  font-weight: 900;
-}
-.phoneicon::before {
-  content: "\f095";
-  font-family: "line Awesome Free";
-  font-weight: 900;
+  .footer-c {
+    // margin-top: 12px;
+    display: block;
+    // flex-basis: 100%;
+    font-size: 12px;
+    font-family: pretendard;
+  }
+  .sns {
+    display: flex;
+    justify-content: space-between;
+  }
+  // icons
+  .facebook::before {
+    content: "\f086";
+    font-family: "line Awesome Free";
+    font-weight: 900;
+  }
+  .instagram::before {
+    content: "\f086";
+    font-family: "line Awesome Free";
+    font-weight: 900;
+  }
+  .youtube::before {
+    content: "\f086";
+    font-family: "line Awesome Free";
+    font-weight: 900;
+  }
+  .kakaotalk::before {
+    content: "\f086";
+    font-family: "line Awesome Free";
+    font-weight: 900;
+  }
+  .mailicon::before {
+    content: "\f0e0";
+    font-family: "line Awesome Free";
+    font-weight: 900;
+  }
+  .phoneicon::before {
+    content: "\f095";
+    font-family: "line Awesome Free";
+    font-weight: 900;
+  }
 }
