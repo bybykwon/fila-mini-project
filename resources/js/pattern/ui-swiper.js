@@ -1,6 +1,6 @@
 var swiper = new Swiper(".slide-intro", {
   slidesPerView: 1,
-  spaceBetween: 10,
+  spaceBetween: 5,
   loop: true,
   // autoplay: true,
   pagination: {
@@ -10,8 +10,8 @@ var swiper = new Swiper(".slide-intro", {
 });
 
 var swiper = new Swiper(".slide-studio", {
-  slidesPerView: 1,
-  spaceBetween: 20,
+  slidesPerView: 1.5,
+  spaceBetween: 5,
   pagination: {
     el: ".slide-studio .swiper-pagination",
     clickable: true,
