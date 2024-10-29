@@ -32,16 +32,16 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   tl.to(".bg", { height: "0", duration: 1 });
-  tl.to(".typo01", { x: -50, y: 0, duration: 1, delay: -1 });
+  tl.to(".typo01", { x: -50, y: 0, duration: 1 });
   tl.to(".typo02", { x: +50, y: 0, duration: 1, delay: -1 });
-  tl.to(".typo span", { alpha: 0, duration: 1 });
+  tl.to(".typo span", { alpha: 1, duration: 1 });
   tl.to(".typo span", { width: 0, duration: 1 });
   tl.to(".typo", { gap: 0, duration: 1, delay: -1 });
-  tl.to(".typo", { width: "auto", y: 0, top: "63%", duration: 1 });
+  tl.to(".typo", { width: "auto", y: 0, top: "63%", duration: 4 });
   tl.to(".images", { alpha: 1, delay: -5 });
   tl.to(".images", { y: "0%", duration: 6, delay: -4 });
-  tl.to(".typo03", { x: -30, y: 0, duration: 1 });
-  tl.to(".typo04", { x: +30, y: 0, duration: 1, delay: -1 });
+  tl.to(".typo03", { x: -30, y: 0, duration: 2 delay: 1});
+  tl.to(".typo04", { x: +30, y: 0, duration: 2, delay: 1});
 });
 
 //화면전체에 적용되서 보류

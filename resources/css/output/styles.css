@@ -531,8 +531,8 @@ a:focus {
 }
 
 button,
-input[type=submit],
-input[type=button] {
+input[type="submit"],
+input[type="button"] {
   overflow: visible;
   margin: 0;
   background-color: transparent;
@@ -563,14 +563,14 @@ select {
   -moz-appearance: none;
 }
 
-input[type=text],
-input[type=tel],
-input[type=password],
-input[type=file],
-input[type=number],
-input[type=email],
-input[type=date],
-input[type=search],
+input[type="text"],
+input[type="tel"],
+input[type="password"],
+input[type="file"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+input[type="search"],
 textarea {
   box-shadow: none;
   appearance: none;
@@ -592,7 +592,7 @@ table {
   border-collapse: collapse;
 }
 
-[role=button] {
+[role="button"] {
   cursor: pointer;
 }
 
@@ -808,7 +808,7 @@ caption {
   outline-offset: -0.4rem;
   outline: 2px solid #246beb;
 }
-.btn[class*=ico-]::after {
+.btn[class*="ico-"]::after {
   display: inline-flex;
   content: "";
   width: 2.4rem;
@@ -816,7 +816,7 @@ caption {
   background-repeat: no-repeat;
   background-size: contain;
 }
-.btn[class*=ico-].ico-before::before {
+.btn[class*="ico-"].ico-before::before {
   display: inline-flex;
   content: "";
   width: 2.4rem;
@@ -825,23 +825,26 @@ caption {
   background-size: contain;
   background-position: center;
 }
-.btn[class*=ico-].ico-before::after {
+.btn[class*="ico-"].ico-before::after {
   display: none;
 }
-.btn.ico-sch::before, .btn.ico-sch::after {
+.btn.ico-sch::before,
+.btn.ico-sch::after {
   background-image: url(get-url("/component/common/ico_sch_20_wh.svg"));
 }
-.btn.ico-arr::before, .btn.ico-arr::after {
+.btn.ico-arr::before,
+.btn.ico-arr::after {
   background-image: url(get-url("/component/common/ico_arr_20_right.svg"));
 }
-.btn.ico-upload::before, .btn.ico-upload::after {
+.btn.ico-upload::before,
+.btn.ico-upload::after {
   background-image: url(get-url("/component/common/ico_upload_20_wh.svg"));
 }
-.btn.xsm[class*=ico-]::after {
+.btn.xsm[class*="ico-"]::after {
   width: 1.6rem;
   height: 1.6rem;
 }
-.btn.sm .btn[class*=ico-]::after {
+.btn.sm .btn[class*="ico-"]::after {
   width: 2rem;
   height: 2rem;
 }
@@ -852,40 +855,41 @@ caption {
   background-color: inherit;
   padding: 0 !important;
 }
-.btn-ico:hover, .btn-ico:active {
+.btn-ico:hover,
+.btn-ico:active {
   background-color: inherit;
 }
 .btn-ico:focus {
   outline-offset: 0.4rem;
   outline: 2px solid #246beb;
 }
-.btn-ico[class*=ico-] {
+.btn-ico[class*="ico-"] {
   width: 4rem;
   height: 4rem;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
-.btn-ico[class*=ico-]::after {
+.btn-ico[class*="ico-"]::after {
   display: none;
 }
-.btn-ico[class*=ico-].md {
+.btn-ico[class*="ico-"].md {
   width: 2.4rem;
   height: 2.4rem;
 }
-.btn-ico[class*=ico-].sm {
+.btn-ico[class*="ico-"].sm {
   width: 2rem;
   height: 2rem;
 }
-.btn-ico[class*=ico-].sm-m {
+.btn-ico[class*="ico-"].sm-m {
   width: 2.4rem;
   height: 2.4rem;
 }
-.btn-ico[class*=ico-].sm-l {
+.btn-ico[class*="ico-"].sm-l {
   width: 3.2rem;
   height: 3.2rem;
 }
-.btn-ico[class*=ico-].xsm {
+.btn-ico[class*="ico-"].xsm {
   width: 1.6rem;
   height: 1.6rem;
 }
@@ -946,7 +950,8 @@ caption {
   background-color: inherit;
   padding: 0 ".2rem" !important;
 }
-.btn-txt:hover, .btn-txt:active {
+.btn-txt:hover,
+.btn-txt:active {
   background-color: inherit;
 }
 .btn-txt:hover {
@@ -959,31 +964,31 @@ caption {
   outline-offset: 0.4rem;
   outline: 2px solid #246beb;
 }
-.btn-txt[class*=ico-]::after {
+.btn-txt[class*="ico-"]::after {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
-.btn-txt[class*=ico-].ico-before::before {
+.btn-txt[class*="ico-"].ico-before::before {
   display: inline-flex;
   content: "";
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
-.btn-txt[class*=ico-].ico-before::after {
+.btn-txt[class*="ico-"].ico-before::after {
   display: none;
 }
-.btn-txt[class*=ico-].ico-call::before {
+.btn-txt[class*="ico-"].ico-call::before {
   background-image: url(get-url("/component/common/ico_call.svg"));
 }
-.btn-txt[class*=ico-].ico-call::after {
+.btn-txt[class*="ico-"].ico-call::after {
   background-image: url(get-url("/component/common/ico_call.svg"));
 }
-.btn-txt[class*=ico-].ico-faq::before {
+.btn-txt[class*="ico-"].ico-faq::before {
   background-image: url(get-url("/component/common/ico_faq.svg"));
 }
-.btn-txt[class*=ico-].ico-faq::after {
+.btn-txt[class*="ico-"].ico-faq::after {
   background-image: url(get-url("/component/common/ico_faq.svg"));
 }
 .btn-txt.underline {
@@ -993,10 +998,12 @@ caption {
   height: auto;
   text-decoration: underline !important;
 }
-.btn-txt.ico-like::before, .btn-txt.ico-like::after {
+.btn-txt.ico-like::before,
+.btn-txt.ico-like::after {
   background-image: url(get-url("/component/common/ico_like_20.svg"));
 }
-.btn-txt.ico-share::before, .btn-txt.ico-share::after {
+.btn-txt.ico-share::before,
+.btn-txt.ico-share::after {
   background-image: url(get-url("/component/common/ico_share_20.svg"));
 }
 .btn-txt.ico-arr::after {
@@ -1008,22 +1015,27 @@ caption {
 .btn-txt.ico-more::after {
   background-image: url(get-url("/component/common/ico_arr1_20_right.svg"));
 }
-.btn-txt.ico-sch::before, .btn-txt.ico-sch::after {
+.btn-txt.ico-sch::before,
+.btn-txt.ico-sch::after {
   background-image: url(get-url("/component/common/ico_sch_40.svg"));
 }
-.btn-txt.ico-sch1::before, .btn-txt.ico-sch1::after {
+.btn-txt.ico-sch1::before,
+.btn-txt.ico-sch1::after {
   background-image: url(get-url("/component/common/ico_sch1_20.svg"));
 }
-.btn-txt.ico-go::before, .btn-txt.ico-go::after {
+.btn-txt.ico-go::before,
+.btn-txt.ico-go::after {
   background-image: url(get-url("/component/common/ico_go_20.svg"));
 }
-.btn-txt.ico-down::before, .btn-txt.ico-down::after {
+.btn-txt.ico-down::before,
+.btn-txt.ico-down::after {
   background-image: url(get-url("/component/common/ico_file_20.svg"));
 }
 .btn-txt.ico-filter {
   position: relative;
 }
-.btn-txt.ico-filter::before, .btn-txt.ico-filter::after {
+.btn-txt.ico-filter::before,
+.btn-txt.ico-filter::after {
   background-image: url(get-url("/component/common/ico_filter_20.svg"));
 }
 .btn-txt.ico-filter .num {
@@ -1039,53 +1051,68 @@ caption {
   border-radius: 2rem;
   background-color: #246beb;
 }
-.btn-txt.ico-reset::before, .btn-txt.ico-reset::after {
+.btn-txt.ico-reset::before,
+.btn-txt.ico-reset::after {
   background-image: url(get-url("/component/common/ico_refresh_16.svg"));
 }
-.btn-txt.ico-log::before, .btn-txt.ico-log::after {
+.btn-txt.ico-log::before,
+.btn-txt.ico-log::after {
   background-image: url(get-url("/component/common/ico_login_20.svg"));
 }
-.btn-txt.ico-func::before, .btn-txt.ico-func::after {
+.btn-txt.ico-func::before,
+.btn-txt.ico-func::after {
   background-image: url(get-url("/component/common/ico_arr_func_20.svg"));
 }
-.btn-txt.ico-logout::before, .btn-txt.ico-logout::after {
+.btn-txt.ico-logout::before,
+.btn-txt.ico-logout::after {
   background-image: url(get-url("/component/common/ico_logout_16.svg"));
 }
-.btn-txt.ico-email::before, .btn-txt.ico-email::after {
+.btn-txt.ico-email::before,
+.btn-txt.ico-email::after {
   background-image: url(get-url("/component/common/ico_email_20.svg"));
 }
-.btn-txt.ico-print::before, .btn-txt.ico-print::after {
+.btn-txt.ico-print::before,
+.btn-txt.ico-print::after {
   background-image: url(get-url("/component/common/ico_print_20.svg"));
 }
-.btn-txt.ico-scrap::before, .btn-txt.ico-scrap::after {
+.btn-txt.ico-scrap::before,
+.btn-txt.ico-scrap::after {
   background-image: url(get-url("/component/common/ico_scrap_20.svg"));
 }
-.btn-txt.ico-del::before, .btn-txt.ico-del::after {
+.btn-txt.ico-del::before,
+.btn-txt.ico-del::after {
   background-image: url(get-url("/component/common/ico_del1_20.svg"));
 }
-.btn-txt.ico-plus::before, .btn-txt.ico-plus::after {
+.btn-txt.ico-plus::before,
+.btn-txt.ico-plus::after {
   background-image: url(get-url("/component/common/ico_plus_24.svg"));
 }
-.btn-txt.ico-setting::before, .btn-txt.ico-setting::after {
+.btn-txt.ico-setting::before,
+.btn-txt.ico-setting::after {
   background-image: url(get-url("/component/common/ico_setting_20.svg"));
 }
-.btn-txt.ico-link::before, .btn-txt.ico-link::after {
+.btn-txt.ico-link::before,
+.btn-txt.ico-link::after {
   background-image: url(get-url("/component/common/ico_link_16.svg"));
 }
-.btn-txt.ico-comment::before, .btn-txt.ico-comment::after {
+.btn-txt.ico-comment::before,
+.btn-txt.ico-comment::after {
   background-image: url(get-url("/component/common/ico_comment_16.svg"));
 }
-.btn-txt.ico-prev::before, .btn-txt.ico-prev::after {
+.btn-txt.ico-prev::before,
+.btn-txt.ico-prev::after {
   background-image: url(get-url("/component/common/ico-prev_24.svg"));
 }
-.btn-txt.sm[class*=ico-]::before, .btn-txt.sm[class*=ico-]::after {
+.btn-txt.sm[class*="ico-"]::before,
+.btn-txt.sm[class*="ico-"]::after {
   width: 2rem;
   height: 2rem;
 }
-.btn-txt.xsm[class*=ico-] {
+.btn-txt.xsm[class*="ico-"] {
   gap: ".2rem";
 }
-.btn-txt.xsm[class*=ico-]::before, .btn-txt.xsm[class*=ico-]::after {
+.btn-txt.xsm[class*="ico-"]::before,
+.btn-txt.xsm[class*="ico-"]::after {
   width: 1.6rem;
   height: 1.6rem;
 }
@@ -1129,7 +1156,7 @@ caption {
 }
 
 @media (max-width: 599px) {
-  .btn-ico[class*=ico-] {
+  .btn-ico[class*="ico-"] {
     width: 2.4rem;
     height: 2.4rem;
   }
@@ -1210,7 +1237,8 @@ caption {
 .coach-highligt {
   position: relative;
 }
-.coach-highligt.txt-box, .coach-highligt.form-addr-result,
+.coach-highligt.txt-box,
+.coach-highligt.form-addr-result,
 .coach-highligt .coach-btn {
   border: 0.1rem solid var(--primary);
   outline: 1rem solid var(--primary-5);
@@ -1557,7 +1585,8 @@ caption {
   font-size: var(--btn-fz-md);
   color: var(--black);
 }
-.btn.btn-helper::before, .btn.btn-helper::after {
+.btn.btn-helper::before,
+.btn.btn-helper::after {
   content: "";
   width: 2rem;
   height: 2rem;
@@ -2175,7 +2204,8 @@ caption {
   bottom: -0.2rem;
   height: 0.4rem;
 }
-.tab.line.full .btn-tab:hover, .tab.line.full .btn-tab:active {
+.tab.line.full .btn-tab:hover,
+.tab.line.full .btn-tab:active {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
@@ -2349,15 +2379,16 @@ caption {
   display: inline-flex;
   font-size: var(--switch-fz-lg);
 }
-.form-switch [type=checkbox] ~ i {
+.form-switch [type="checkbox"] ~ i {
   display: inline-flex;
   align-items: center;
 }
-.form-switch [type=checkbox] ~ i::before, .form-switch [type=checkbox] ~ i::after {
+.form-switch [type="checkbox"] ~ i::before,
+.form-switch [type="checkbox"] ~ i::after {
   display: inline-flex;
   content: "";
 }
-.form-switch [type=checkbox] ~ i::before {
+.form-switch [type="checkbox"] ~ i::before {
   position: absolute;
   left: var(--switch-br-lg);
   width: var(--switch-b-lg);
@@ -2366,37 +2397,37 @@ caption {
   background-color: var(--white);
   transition: all 0.3s;
 }
-.form-switch [type=checkbox] ~ i::after {
+.form-switch [type="checkbox"] ~ i::after {
   width: var(--switch-w-lg);
   height: var(--switch-h-lg);
   border-radius: var(--switch-rd-lg);
   background-color: var(--secondary-20);
 }
-.form-switch [type=checkbox] ~ label {
+.form-switch [type="checkbox"] ~ label {
   z-index: 1;
   padding-left: calc(var(--switch-w-lg) + var(--switch-pd-lg));
   margin-left: calc(var(--switch-w-lg) * -1);
   font-size: var(--switch-fz-lg);
 }
-.form-switch [type=checkbox]:checked ~ i::before {
+.form-switch [type="checkbox"]:checked ~ i::before {
   position: absolute;
   left: calc(var(--switch-w-lg) - var(--switch-b-lg) - var(--switch-br-lg));
 }
-.form-switch [type=checkbox]:checked ~ i::after {
+.form-switch [type="checkbox"]:checked ~ i::after {
   background-color: var(--primary);
 }
-.form-switch [type=checkbox]:disabled ~ i::before {
+.form-switch [type="checkbox"]:disabled ~ i::before {
   border-color: var(--gray-20);
   background-color: var(--gray-40);
 }
-.form-switch [type=checkbox]:disabled ~ i::after {
+.form-switch [type="checkbox"]:disabled ~ i::after {
   background-color: var(--gray-20);
 }
-.form-switch [type=checkbox]:disabled ~ label {
+.form-switch [type="checkbox"]:disabled ~ label {
   color: var(--gray-50);
   cursor: inherit;
 }
-.form-switch [type=checkbox]:focus ~ label {
+.form-switch [type="checkbox"]:focus ~ label {
   outline-offset: 0.4rem;
   outline: 2px solid #246beb;
 }
@@ -2495,7 +2526,8 @@ caption {
 .datepicker-wrap .datepicker-head .datepicker-switch-wrap .btn-cal-switch:hover {
   background-color: var(--secondary-10);
 }
-.datepicker-wrap .datepicker-head .datepicker-switch-wrap .btn-cal-switch:focus, .datepicker-wrap .datepicker-head .datepicker-switch-wrap .btn-cal-switch:active {
+.datepicker-wrap .datepicker-head .datepicker-switch-wrap .btn-cal-switch:focus,
+.datepicker-wrap .datepicker-head .datepicker-switch-wrap .btn-cal-switch:active {
   border: 1px solid var(--secondary-10);
 }
 .datepicker-wrap .datepicker-tbl-wrap {
@@ -2515,7 +2547,8 @@ caption {
   width: 100%;
   height: 100%;
 }
-.datepicker-wrap .datepicker-tbl-wrap .datepicker-tbl th.old, .datepicker-wrap .datepicker-tbl-wrap .datepicker-tbl th.new,
+.datepicker-wrap .datepicker-tbl-wrap .datepicker-tbl th.old,
+.datepicker-wrap .datepicker-tbl-wrap .datepicker-tbl th.new,
 .datepicker-wrap .datepicker-tbl-wrap .datepicker-tbl td.old,
 .datepicker-wrap .datepicker-tbl-wrap .datepicker-tbl td.new {
   color: rgba(113, 113, 113, 0.3);
@@ -2524,13 +2557,15 @@ caption {
 .datepicker-wrap .datepicker-tbl-wrap .datepicker-tbl td.period .btn-set-date {
   background-color: var(--primary-10);
 }
-.datepicker-wrap .datepicker-tbl-wrap .datepicker-tbl th.period.start > .btn-set-date, .datepicker-wrap .datepicker-tbl-wrap .datepicker-tbl th.period.end > .btn-set-date,
+.datepicker-wrap .datepicker-tbl-wrap .datepicker-tbl th.period.start > .btn-set-date,
+.datepicker-wrap .datepicker-tbl-wrap .datepicker-tbl th.period.end > .btn-set-date,
 .datepicker-wrap .datepicker-tbl-wrap .datepicker-tbl td.period.start > .btn-set-date,
 .datepicker-wrap .datepicker-tbl-wrap .datepicker-tbl td.period.end > .btn-set-date {
   background-color: var(--primary);
   color: var(--white);
 }
-.datepicker-wrap .datepicker-tbl-wrap .datepicker-tbl th.period.start > .btn-set-date:focus, .datepicker-wrap .datepicker-tbl-wrap .datepicker-tbl th.period.end > .btn-set-date:focus,
+.datepicker-wrap .datepicker-tbl-wrap .datepicker-tbl th.period.start > .btn-set-date:focus,
+.datepicker-wrap .datepicker-tbl-wrap .datepicker-tbl th.period.end > .btn-set-date:focus,
 .datepicker-wrap .datepicker-tbl-wrap .datepicker-tbl td.period.start > .btn-set-date:focus,
 .datepicker-wrap .datepicker-tbl-wrap .datepicker-tbl td.period.end > .btn-set-date:focus {
   outline-offset: -0.4rem;
@@ -2565,7 +2600,7 @@ caption {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   -moz-column-gap: 1.2rem;
-       column-gap: 1.2rem;
+  column-gap: 1.2rem;
   row-gap: 0.8rem;
 }
 .datepicker-wrap .datepicker-body .sel.month > li {
@@ -2782,18 +2817,18 @@ textarea.form-control {
   margin-left: var(--krds-spacer-default2);
 }
 
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
   margin: 0;
 }
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-input[type=text]::-ms-clear {
+input[type="text"]::-ms-clear {
   display: none;
 }
 
@@ -2859,7 +2894,8 @@ input[type=text]::-ms-clear {
   display: grid;
   gap: var(--spacer-6);
 }
-.form-wrap > li, .form-wrap.standalone,
+.form-wrap > li,
+.form-wrap.standalone,
 .form-wrap > .row {
   line-height: 1;
 }
@@ -2887,8 +2923,8 @@ input[type=text]::-ms-clear {
 }
 
 /* radio checkbox */
-input[type=radio],
-input[type=checkbox] {
+input[type="radio"],
+input[type="checkbox"] {
   position: absolute !important;
   width: 1px !important;
   height: 1px !important;
@@ -2927,8 +2963,8 @@ input[type=checkbox] {
   padding: 0;
 }
 
-.form-check input[type=radio] ~ label,
-.form-check input[type=checkbox] ~ label {
+.form-check input[type="radio"] ~ label,
+.form-check input[type="checkbox"] ~ label {
   position: relative;
   display: inline-flex;
   min-height: var(--rdo-size-md);
@@ -2936,32 +2972,33 @@ input[type=checkbox] {
   font-size: var(--rdo-fz-md);
   line-height: var(--rdo-size-md);
 }
-.form-check input[type=radio] ~ label:before, .form-check input[type=radio] ~ label:after,
-.form-check input[type=checkbox] ~ label:before,
-.form-check input[type=checkbox] ~ label:after {
+.form-check input[type="radio"] ~ label:before,
+.form-check input[type="radio"] ~ label:after,
+.form-check input[type="checkbox"] ~ label:before,
+.form-check input[type="checkbox"] ~ label:after {
   display: block;
   content: "";
   transition: 0.4s cubic-bezier(0.4, 0, 0.23, 1);
 }
-.form-check input[type=radio] ~ label:before,
-.form-check input[type=checkbox] ~ label:before {
+.form-check input[type="radio"] ~ label:before,
+.form-check input[type="checkbox"] ~ label:before {
   z-index: 3;
 }
-.form-check input[type=radio] ~ label:after,
-.form-check input[type=checkbox] ~ label:after {
+.form-check input[type="radio"] ~ label:after,
+.form-check input[type="checkbox"] ~ label:after {
   z-index: 4;
 }
-.form-check input[type=radio]:focus ~ label,
-.form-check input[type=checkbox]:focus ~ label {
+.form-check input[type="radio"]:focus ~ label,
+.form-check input[type="checkbox"]:focus ~ label {
   outline-offset: 0.4rem;
   outline: 2px solid #246beb;
 }
-.form-check input[type=radio]:disabled + label,
-.form-check input[type=checkbox]:disabled + label {
+.form-check input[type="radio"]:disabled + label,
+.form-check input[type="checkbox"]:disabled + label {
   color: var(--gray-50);
   cursor: default;
 }
-.form-check input[type=radio] ~ label:before {
+.form-check input[type="radio"] ~ label:before {
   position: absolute;
   top: 0;
   left: 0;
@@ -2971,7 +3008,7 @@ input[type=checkbox] {
   border: 1px solid var(--gray-60);
   border-radius: var(--rd-full);
 }
-.form-check input[type=radio] ~ label:after {
+.form-check input[type="radio"] ~ label:after {
   position: absolute;
   top: calc((var(--rdo-size-md) - var(--rdo-chk-md)) / 2);
   left: calc((var(--rdo-size-md) - var(--rdo-chk-md)) / 2);
@@ -2980,29 +3017,29 @@ input[type=checkbox] {
   background-color: var(--white);
   border-radius: var(--rd-full);
 }
-.form-check input[type=radio]:checked ~ label:before {
+.form-check input[type="radio"]:checked ~ label:before {
   border-color: var(--primary);
 }
-.form-check input[type=radio]:checked ~ label:after {
+.form-check input[type="radio"]:checked ~ label:after {
   background-color: var(--primary);
 }
-.form-check input[type=radio]:checked:disabled ~ label:before {
+.form-check input[type="radio"]:checked:disabled ~ label:before {
   border-color: var(--gray-40);
   background-color: var(--gray-20);
 }
-.form-check input[type=radio]:checked:disabled ~ label:after {
+.form-check input[type="radio"]:checked:disabled ~ label:after {
   display: block;
   background-color: var(--gray-40);
 }
-.form-check input[type=radio]:disabled ~ label:before {
+.form-check input[type="radio"]:disabled ~ label:before {
   border-color: var(--gray-40);
   background-color: var(--gray-20);
 }
-.form-check input[type=radio]:disabled ~ label:after {
+.form-check input[type="radio"]:disabled ~ label:after {
   display: none;
   background-color: var(--gray-40);
 }
-.form-check input[type=checkbox] ~ label:before {
+.form-check input[type="checkbox"] ~ label:before {
   position: absolute;
   top: 0;
   left: 0;
@@ -3012,7 +3049,7 @@ input[type=checkbox] {
   border: 1px solid var(--gray-60);
   border-radius: var(--rd-4);
 }
-.form-check input[type=checkbox] ~ label:after {
+.form-check input[type="checkbox"] ~ label:after {
   position: absolute;
   top: calc((var(--chk-size-md) - var(--chk-primary-chk-md)) / 2);
   left: calc((var(--chk-size-md) - var(--chk-primary-chk-md)) / 2);
@@ -3022,37 +3059,37 @@ input[type=checkbox] {
   background-size: contain;
   opacity: 0;
 }
-.form-check input[type=checkbox]:checked ~ label:before {
+.form-check input[type="checkbox"]:checked ~ label:before {
   background-color: var(--primary);
   border-color: var(--primary);
 }
-.form-check input[type=checkbox]:checked ~ label:after {
+.form-check input[type="checkbox"]:checked ~ label:after {
   opacity: 1;
   transition-delay: 0.2s;
 }
-.form-check input[type=checkbox]:disabled ~ label:before {
+.form-check input[type="checkbox"]:disabled ~ label:before {
   border-color: var(--gray-40);
   background-color: var(--gray-20);
 }
-.form-check input[type=checkbox]:disabled ~ label:after {
+.form-check input[type="checkbox"]:disabled ~ label:after {
   background-image: url(../../img/component/common/ico_check_primary_disabled.svg);
 }
 .form-check.ico-only {
   display: inline-flex;
   vertical-align: middle;
 }
-.form-check.ico-only > [type=checkbox] ~ label {
+.form-check.ico-only > [type="checkbox"] ~ label {
   padding-left: var(--chk-size-md) !important;
 }
-.form-check.ico-only > [type=radio] ~ label {
+.form-check.ico-only > [type="radio"] ~ label {
   padding-left: var(--rdo-size-md) !important;
 }
 
-.chk-secondary .form-check input[type=checkbox] ~ label:before {
+.chk-secondary .form-check input[type="checkbox"] ~ label:before {
   background-color: transparent;
   border-color: transparent;
 }
-.chk-secondary .form-check input[type=checkbox] ~ label:after {
+.chk-secondary .form-check input[type="checkbox"] ~ label:after {
   position: absolute;
   top: calc((var(--chk-size-md) - var(--chk-secondary-chk-md)) / 2);
   left: calc((var(--chk-size-md) - var(--chk-secondary-chk-md)) / 2);
@@ -3061,18 +3098,18 @@ input[type=checkbox] {
   background: url(../../img/component/common/ico_check_secondary.svg) no-repeat 0 0;
   opacity: 1;
 }
-.chk-secondary .form-check input[type=checkbox]:checked ~ label:before {
+.chk-secondary .form-check input[type="checkbox"]:checked ~ label:before {
   background-color: transparent;
   border-color: transparent;
 }
-.chk-secondary .form-check input[type=checkbox]:checked ~ label:after {
+.chk-secondary .form-check input[type="checkbox"]:checked ~ label:after {
   background-image: url(../../img/component/common/ico_check_secondary_checked.svg);
 }
-.chk-secondary .form-check input[type=checkbox]:disabled ~ label:before {
+.chk-secondary .form-check input[type="checkbox"]:disabled ~ label:before {
   background-color: transparent;
   border-color: transparent;
 }
-.chk-secondary .form-check input[type=checkbox]:disabled ~ label:after {
+.chk-secondary .form-check input[type="checkbox"]:disabled ~ label:after {
   background-image: url(../../img/component/common/ico_check_secondary_disabled.svg);
 }
 
@@ -3126,27 +3163,27 @@ input[type=checkbox] {
   background-position: center;
   background-size: 1.6rem;
 }
-.chk-group-area .chk-group-wrap input[type=radio] + label,
-.chk-group-area .chk-group-wrap input[type=checkbox] + label {
+.chk-group-area .chk-group-wrap input[type="radio"] + label,
+.chk-group-area .chk-group-wrap input[type="checkbox"] + label {
   flex-direction: column;
   width: 100%;
   padding-left: 4.4rem;
 }
-.chk-group-area .chk-group-wrap input[type=radio] + label .tit,
-.chk-group-area .chk-group-wrap input[type=checkbox] + label .tit {
+.chk-group-area .chk-group-wrap input[type="radio"] + label .tit,
+.chk-group-area .chk-group-wrap input[type="checkbox"] + label .tit {
   font-weight: 700;
   color: var(--gray-90);
 }
-.chk-group-area .chk-group-wrap input[type=radio] + label .tit + .conts-desc,
-.chk-group-area .chk-group-wrap input[type=checkbox] + label .tit + .conts-desc {
+.chk-group-area .chk-group-wrap input[type="radio"] + label .tit + .conts-desc,
+.chk-group-area .chk-group-wrap input[type="checkbox"] + label .tit + .conts-desc {
   margin-top: var(--spacer-4);
 }
-.chk-group-area .chk-group-wrap input[type=radio]:disabled + label,
-.chk-group-area .chk-group-wrap input[type=checkbox]:disabled + label {
+.chk-group-area .chk-group-wrap input[type="radio"]:disabled + label,
+.chk-group-area .chk-group-wrap input[type="checkbox"]:disabled + label {
   color: var(--gray-50);
 }
-.chk-group-area .chk-group-wrap input[type=radio]:disabled + label .tit,
-.chk-group-area .chk-group-wrap input[type=checkbox]:disabled + label .tit {
+.chk-group-area .chk-group-wrap input[type="radio"]:disabled + label .tit,
+.chk-group-area .chk-group-wrap input[type="checkbox"]:disabled + label .tit {
   color: inherit;
 }
 .chk-group-area .chk-group-wrap .btn-wrap {
@@ -3213,12 +3250,12 @@ input[type=checkbox] {
 .form-group > p {
   width: 100%;
 }
-.form-group [class^=form-hint] {
+.form-group [class^="form-hint"] {
   font-size: var(--fz-label-sm);
   color: var(--gray-70);
   padding-left: calc(2rem + var(--spacer-1));
 }
-.form-group [class^=form-hint]::before {
+.form-group [class^="form-hint"]::before {
   display: inline-flex;
   width: 2rem;
   height: 2rem;
@@ -3602,7 +3639,7 @@ input[type=checkbox] {
   display: block;
   width: 121px;
   height: 41px;
-  background: url("/resources/images/pattern/common/head_logo.png") no-repeat 0 0/contain;
+  background: url("/resources/images/pattern/common/head_logo.png") no-repeat 0 0 / contain;
 }
 #header #logo span {
   position: absolute !important;
@@ -3779,7 +3816,7 @@ input[type=checkbox] {
   padding: 20px;
   background: rgba(255, 255, 255, 0.9);
   -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   transition: all 0.3s;
 }
 #nav-all.active {
@@ -3802,37 +3839,72 @@ input[type=checkbox] {
 }
 
 .inner.typo {
-  margin-top: 32px;
-  margin-bottom: 32px;
+  display: flex;
+  flex-basis: 100%;
+  flex-grow: 1;
+  justify-content: center;
+  margin-top: 20%;
+  margin-bottom: 20%;
 }
 
 .inner.typo02 {
-  margin-top: 32px;
-  margin-bottom: 32px;
+  display: flex;
+  flex-basis: 100%;
+  flex-grow: 1;
+  justify-content: center;
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
+.innwrap1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.innwrap2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.typo04 {
+  font-family: pretendard;
 }
 
 .txt.txt01 {
-  display: block;
+  flex: 1;
+  display: inline-block;
 }
 
 .txt.txt01 h3 {
+  font-family: Cormorant;
   text-align: center;
+  font-size: 30px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .txt.txt01 p {
+  display: flex;
   text-align: left;
   font-size: 15px;
+  margin-left: 10vw;
+  margin-right: 10vw;
   font-family: pretendard;
 }
 
 .txt.txt02 {
-  display: block;
+  flex: 1;
+  display: inline-block;
 }
 
 .txt.txt02 h3 {
+  font-family: Cormorant;
   text-align: center;
+  font-size: 30px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -3841,8 +3913,9 @@ input[type=checkbox] {
   display: flex;
   text-align: left;
   font-size: 15px;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-bottom: 10%;
   font-family: pretendard;
 }
 
@@ -3860,18 +3933,6 @@ input[type=checkbox] {
   font-size: 36px;
   font-family: Cormorant;
   display: block;
-}
-
-.inner.typo {
-  display: flex;
-  flex-basis: 100%;
-  justify-content: center;
-}
-
-.inner.typo02 {
-  display: flex;
-  flex-basis: 100%;
-  justify-content: center;
 }
 
 .swiper-wrapper strong {
@@ -3892,8 +3953,8 @@ input[type=checkbox] {
 }
 
 .sec-g__tit {
-  margin-top: 20%;
-  margin-bottom: 20%;
+  margin-top: 10%;
+  margin-bottom: 10%;
   text-align: center;
 }
 
@@ -3910,7 +3971,7 @@ input[type=checkbox] {
   width: 100%;
   height: 295px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .sec-bs .inner {
@@ -3934,6 +3995,7 @@ input[type=checkbox] {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  bottom: 0;
 }
 
 .footer-logo {
@@ -3955,41 +4017,50 @@ input[type=checkbox] {
   font-size: 12px;
   font-family: pretendard;
 }
-.footer-b .footer-c {
+
+.footer-c {
+  width: 100%;
   display: block;
   font-size: 12px;
   font-family: pretendard;
 }
-.footer-b .sns {
+
+.sns {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
-.footer-b .facebook::before {
+
+.facebook::before {
   content: "\f086";
   font-family: "line Awesome Free";
   font-weight: 900;
 }
-.footer-b .instagram::before {
+
+.instagram::before {
   content: "\f086";
   font-family: "line Awesome Free";
   font-weight: 900;
 }
-.footer-b .youtube::before {
+
+.youtube::before {
   content: "\f086";
   font-family: "line Awesome Free";
   font-weight: 900;
 }
-.footer-b .kakaotalk::before {
+
+.kakaotalk::before {
   content: "\f086";
   font-family: "line Awesome Free";
   font-weight: 900;
 }
-.footer-b .mailicon::before {
+
+.mailicon::before {
   content: "\f0e0";
   font-family: "line Awesome Free";
   font-weight: 900;
 }
-.footer-b .phoneicon::before {
+
+.phoneicon::before {
   content: "\f095";
   font-family: "line Awesome Free";
   font-weight: 900;
@@ -4016,7 +4087,7 @@ input[type=checkbox] {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .swiper .swiper-slide a {
   display: block;
@@ -4051,7 +4122,7 @@ input[type=checkbox] {
 }
 .slide-intro .swiper-slide img {
   -o-object-position: 50% 100%;
-     object-position: 50% 100%;
+  object-position: 50% 100%;
 }
 .slide-intro .swiper-slide .text-area {
   position: absolute;
@@ -4076,8 +4147,8 @@ input[type=checkbox] {
   display: inline-block;
   margin-top: 20px;
   padding: 7px 20px;
-  background: #246beb;
   color: #fff;
+  border: 2px solid #fff;
 }
 .slide-intro .swiper-slide img {
   height: 50vh;
@@ -4135,4 +4206,4 @@ input[type=checkbox] {
 }
 .slide-studio .swiper-pagination {
   bottom: -50px;
-}/*# sourceMappingURL=styles.css.map */
+} /*# sourceMappingURL=styles.css.map */
