@@ -71,7 +71,7 @@
       &__tit {
         font-size: 3rem;
         color: $gray-90;
-        font-family: "GmarketSansMedium";
+        font-family: "pretendard";
         font-weight: $font-medium;
       }
       &__cont {
@@ -81,12 +81,12 @@
         display: inline-block;
         margin-top: 20px;
         padding: 7px 20px;
-        background: $primary;
+        background: rgba(0, 0, 0, 0.4);
         color: $white;
       }
     }
     img {
-      height: 50vh;
+      height: 76vh;
     }
   }
   .swiper-pagination {

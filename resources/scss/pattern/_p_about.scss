@@ -18,7 +18,7 @@
 
 .inner {
   margin: 0 auto;
-  max-width: 1700px;
+  max-width: 1920px;
   width: 90%;
 }
 
@@ -128,6 +128,8 @@
 }
 
 .about_images > img {
+  top: 50%;
+  left: 50%;
   position: absolute;
   max-width: 300px;
 }
@@ -175,7 +177,7 @@
   top: 0;
 }
 
-.about_rolling .txt {
+.about_rolling .about_txt {
   position: absolute;
   left: 50%;
   top: 40%;
@@ -187,25 +189,25 @@
   transform: translateX(-50%);
 }
 
-.aoubt_rolling .txt h3 {
+.rolling .about_txt h3 {
   font-size: 28px;
   font-weight: 700;
   line-height: 1.3;
 }
 
-.about_rolling .txt strong {
+.rolling .about_txt strong {
   font-weight: 700;
 }
 
-.about_rolling .txt sub {
+.rolling .about_txt sub {
   font-size: 0.8em;
 }
 
-.about_rolling .txt p {
+.rolling .about_txt p {
   margin-top: 20px;
 }
 
-.about_rolling .txt:after {
+.rolling .about_txt:after {
   content: "";
   width: 13px;
   height: 12px;
@@ -217,7 +219,7 @@
   top: 10px;
 }
 
-.about_rolling .txt .box {
+.rolling .about_txt .box {
   background: #fff;
   color: #a6a6a6;
   font-size: 16px;
@@ -226,20 +228,30 @@
   margin-top: 20px;
 }
 
-.about_pin-spacer {
+.pin-spacer {
   display: block;
   margin: 0px;
   position: relative;
   overflow: visible;
   box-sizing: border-box;
   width: 100%;
-  height: 10000px;
+  height: 9000px;
   padding: 0px 0px 7792px;
 }
 
-.about_pin01 {
+.pin01 {
   position: fixed;
   width: 100%;
   height: 100%;
   box-sizing: border-box;
+}
+
+.about_story {
+  display: flex;
+  justify-content: space-between;
+  gap: 26px;
+}
+.about_images {
+  flex: 1;
+  flex-wrap: wrap;
 }
