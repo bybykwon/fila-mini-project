@@ -3639,7 +3639,7 @@ input[type="checkbox"] {
   display: block;
   width: 121px;
   height: 41px;
-  background: url("../../resources/images/pattern/common/head_logo.png") no-repeat 0 0 / contain;
+  background: url("../../images/logos/head_logo.png") no-repeat 0 0 / contain;
 }
 #header #logo span {
   position: absolute !important;
