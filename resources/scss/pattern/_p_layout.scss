@@ -91,7 +91,7 @@
     }
     .gnb__depth2 {
       height: 218px;
-      padding: 30px 0;
+      padding: 15px 0;
     }
   }
   &::before {
@@ -125,7 +125,7 @@
       display: block;
       width: 121px;
       height: 41px;
-      background: url("/resources/images/pattern/common/head_logo.png") no-repeat 0 0 / contain;
+      background: url("../resources/images/pattern/common/head_logo.png") no-repeat 0 0 / contain;
     }
     span {
       @include sr-only;
@@ -307,21 +307,21 @@
 }
 
 // 메인 GSAP
-.images {
+.story .images {
   display: block;
   width: 350px;
   height: 489px;
   border-radius: 20px;
 }
 
-.images2 {
+.story .images2 {
   display: block;
   width: 350px;
   height: 489px;
   border-radius: 20px;
 }
 
-.inner.typo {
+.story .inner.typo {
   display: flex;
   flex-basis: 100%;
   flex-grow: 1;
@@ -329,7 +329,7 @@
   margin-top: 20%;
   margin-bottom: 20%;
 }
-.inner.typo02 {
+.story .inner.typo02 {
   display: flex;
   flex-basis: 100%;
   flex-grow: 1;
@@ -338,35 +338,35 @@
   margin-bottom: 20%;
 }
 
-.innwrap1 {
+.story .innwrap1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
-.innwrap2 {
+.story .innwrap2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 
-.typo04 {
+.story .typo04 {
   font-family: pretendard;
 }
 
-.txt.txt01 {
+.story .txt.txt01 {
   flex: 1;
   display: inline-block;
 }
-.txt.txt01 h3 {
+.story .txt.txt01 h3 {
   font-family: Cormorant;
   text-align: center;
   font-size: 30px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.txt.txt01 p {
+.story .txt.txt01 p {
   display: flex;
   text-align: left;
   font-size: 15px;
@@ -385,7 +385,7 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.txt.txt02 p {
+.story .txt.txt02 p {
   display: flex;
   text-align: left;
   font-size: 15px;
@@ -395,19 +395,37 @@
   font-family: pretendard;
 }
 
-.typo {
+.story .typo {
   white-space: nowrap;
   text-align: center;
   font-size: 40px;
   font-family: Cormorant;
   display: block;
+  @media (max-width: 1920px) {
+    font-size: 80px;
+  }
+  @media (max-width: 768px) {
+    font-size: 60px;
+  }
+  @media (max-width: 480px) {
+    font-size: 40px;
+  }
 }
-.typo2 {
+.story .typo2 {
   white-space: nowrap;
   text-align: center;
   font-size: 36px;
   font-family: Cormorant;
   display: block;
+  @media (max-width: 1920px) {
+    font-size: 80px;
+  }
+  @media (max-width: 768px) {
+    font-size: 60px;
+  }
+  @media (max-width: 480px) {
+    font-size: 36px;
+  }
 }
 
 .swiper-wrapper strong {
@@ -463,11 +481,11 @@
   opacity: 1;
 }
 
+// 풋터
 #footer-inner {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
   bottom: 0;
 }
 .footer-logo {
@@ -530,3 +548,17 @@
   font-family: "line Awesome Free";
   font-weight: 900;
 }
+.close .closeicon::before {
+  content: "\f410";
+  font-family: "line Awesome Free";
+  font-weight: 900;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  font-size: 4rem;
+  color: $gray-90;
+  padding: 20px;
+}
+// flex 안먹을시 text-align
+
+// about 페이지
