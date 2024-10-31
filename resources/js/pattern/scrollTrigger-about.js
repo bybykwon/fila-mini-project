@@ -21,41 +21,6 @@ window.addEventListener("scroll", function () {
   });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  var tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".pin01",
-      scrub: 3,
-      start: "top center",
-      end: "+=90%",
-    },
-  });
-
-  tl.to(".bg", { height: "0", duration: 2 });
-  tl.to(".typo01", { x: -50, y: 0, duration: 1 });
-  tl.to(".typo02", { x: +50, y: 0, duration: 1 }), "-=1";
-
-  tl.to(".typo", { gap: 0, duration: 1, delay: 2 });
-  tl.to(".typo", { width: "auto", y: 0, top: "63%", duration: 4 });
-  tl.fromTo(
-    ".txt01",
-    { y: 20, alpha: 0 }, // 시작 상태: 아래로 20px, 완전히 투명
-    { y: 0, alpha: 1, duration: 2, ease: "power1.out" } // 부드럽게 올라오며 나타남
-  );
-  tl.to(".txt01", { alpha: 1, duration: 5, delay: 2 });
-  tl.fromTo(
-    ".txt02",
-    { y: 20, alpha: 0 }, // 시작 상태: 아래로 20px, 완전히 투명
-    { y: 0, alpha: 1, duration: 2, ease: "power1.out" } // 부드럽게 올라오며 나타남
-  );
-  tl.to(".txt02", { alpha: 1, duration: 5, delay: 4 });
-
-  tl.to(".images", { alpha: 1, delay: -5 });
-  tl.to(".images", { y: "0%", duration: 6, delay: -4 });
-  tl.to(".typo03", { x: -50, y: 0, duration: 1 });
-  tl.to(".typo04", { x: +30, y: 0, duration: 1, delay: -1 });
-});
-
 //화면전체에 적용되서 보류
 // gsap.to(".story .images", {
 //   scrollTrigger: {
@@ -75,3 +40,29 @@ document.addEventListener("DOMContentLoaded", function () {
 //   },
 //   width: 350,
 //   height: 490,});]
+
+document.addEventListener("DOMContentLoaded", function () {
+  var tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "about_pin01",
+      scrub: 1,
+      pin: "about_pin01",
+      start: "top top",
+      end: "+=800%",
+    },
+  });
+  tl.to(".about_bg", { height: "-10", duration: 1 });
+  tl.to(".about_typo01", { y: 0, duration: 1, delay: -1 });
+  tl.to(".about_typo02", { y: 0, duration: 1, delay: -1 });
+  tl.to(".about_typo span", { alpha: 0, duration: 1 });
+  tl.to(".abou_typo span", { width: 0, duration: 1 });
+  tl.to(".about_typo", { gap: 0, duration: 1, delay: -1 });
+  tl.to(".about_typo", { width: "auto", y: 0, top: "36%", duration: 1 });
+  tl.to(".about_bg02", { top: 0, duration: 1, delay: -1 });
+  tl.to(".about_txt01", { alpha: 1, y: 0, duration: 1 });
+  tl.to(".about_txt01", { alpha: 0, y: -40, duration: 1 });
+  tl.to(".about_txt02", { alpha: 1, y: 0, duration: 1 });
+  tl.to(".about_txt02", { alpha: 0, y: -40, duration: 1 });
+  tl.to(".about_images", { alpha: 1, delay: -5 });
+  tl.to(".about_images", { y: "-70%", duration: 6, delay: -4 });
+});
