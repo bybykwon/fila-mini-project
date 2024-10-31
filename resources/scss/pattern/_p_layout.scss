@@ -349,6 +349,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 480px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 .story .typo04 {
@@ -411,6 +416,7 @@
     font-size: 40px;
   }
 }
+
 .story .typo2 {
   white-space: nowrap;
   text-align: center;
@@ -488,11 +494,15 @@
   justify-content: space-between;
   bottom: 0;
 }
+
+// display: flex;
+// justify-content: space-between;
+
 .footer-logo {
-  display: block;
   width: 80px;
   height: 27px;
 }
+
 .footer-a {
   display: block;
   flex: 1;
@@ -502,6 +512,7 @@
 .footer-b {
   display: block;
   flex: 1;
+  margin-left: auto;
   font-size: 12px;
   font-family: pretendard;
 }
@@ -514,30 +525,12 @@
 }
 
 .sns {
-  display: flex;
-  justify-content: flex-start;
+  display: inline;
 }
-// icons
-.facebook::before {
-  content: "\f086";
-  font-family: "line Awesome Free";
-  font-weight: 900;
+.sns img {
+  padding: 10px;
 }
-.instagram::before {
-  content: "\f086";
-  font-family: "line Awesome Free";
-  font-weight: 900;
-}
-.youtube::before {
-  content: "\f086";
-  font-family: "line Awesome Free";
-  font-weight: 900;
-}
-.kakaotalk::before {
-  content: "\f086";
-  font-family: "line Awesome Free";
-  font-weight: 900;
-}
+
 .mailicon::before {
   content: "\f0e0";
   font-family: "line Awesome Free";
