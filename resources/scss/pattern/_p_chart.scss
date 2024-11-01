@@ -11,8 +11,8 @@
   padding-top: 1.875rem;
   padding-bottom: 1.875rem;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
-  margin: 0 auto;
 }
 
 .itemlist .item_list ul {
@@ -20,7 +20,7 @@
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   gap: 20px;
 }
 .itemlist .item_list2 ul {
@@ -44,6 +44,7 @@
 .items {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
   padding-top: 4.375rem;
   padding-bottom: 4.375rem;
@@ -51,19 +52,21 @@
 
 .items ul {
   display: flex;
+  max-width: 1000px;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .card {
   width: 20vh;
-  border: 1px solid #ddd;
+  padding: 5px;
   object-fit: cover;
+  // border: 1px solid #ddd;
 }
 
 .desc {
   padding: 10px 0;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: "pretendard";
   font-weight: 50;
 }

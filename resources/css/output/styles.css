@@ -3855,7 +3855,7 @@ input[type=checkbox] {
 }
 
 .story .txt.txt01 h3 {
-  font-family: Cormorant;
+  font-family: "Cormorant";
   text-align: center;
   font-size: 30px;
   margin-top: 20px;
@@ -3877,7 +3877,7 @@ input[type=checkbox] {
 }
 
 .txt.txt02 h3 {
-  font-family: Cormorant;
+  font-family: "Cormorant";
   text-align: center;
   font-size: 30px;
   margin-top: 20px;
@@ -3898,7 +3898,7 @@ input[type=checkbox] {
   white-space: nowrap;
   text-align: center;
   font-size: 40px;
-  font-family: Cormorant;
+  font-family: "Cormorant";
   display: block;
 }
 @media (max-width: 1920px) {
@@ -3921,7 +3921,7 @@ input[type=checkbox] {
   white-space: nowrap;
   text-align: center;
   font-size: 36px;
-  font-family: Cormorant;
+  font-family: "Cormorant";
   display: block;
 }
 @media (max-width: 1920px) {
@@ -3961,7 +3961,7 @@ input[type=checkbox] {
   margin-top: 10%;
   margin-bottom: 10%;
   text-align: center;
-  font-family: Cormorant;
+  font-family: "Cormorant";
 }
 
 .sec-bs {
@@ -4205,6 +4205,137 @@ input[type=checkbox] {
   bottom: -50px;
 }
 
+.about_inner {
+  max-width: 1240px;
+  position: relative;
+  height: 100%;
+}
+
+.about_pinA {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.about_bg {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 400px;
+  z-index: -3;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.about_bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about_bg2 {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: -2;
+}
+
+.about_bg2 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 200px;
+}
+
+.about_images {
+  width: 100%;
+  height: 320%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.about_images > img {
+  position: absolute;
+  max-width: 300px;
+}
+
+.about_images > img:nth-child(1) {
+  right: 40%;
+  top: 20%;
+}
+
+.about_images > img:nth-child(2) {
+  left: 10%;
+  top: 20%;
+}
+
+.about_images > img:nth-child(3) {
+  right: 10%;
+  top: 30%;
+}
+
+.about_images > img:nth-child(4) {
+  right: 30%;
+  top: 50%;
+}
+
+.about_images > img:nth-child(5) {
+  left: 30%;
+  top: 60%;
+}
+
+.about_images > img:nth-child(6) {
+  left: 10%;
+  top: 70%;
+}
+
+.about_images > img:nth-child(7) {
+  left: 40%;
+  top: 90%;
+}
+
+.about_typo {
+  font-size: 60px;
+  line-height: 1;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 400px;
+}
+
+.about_typo span {
+  display: inline-block;
+  font-size: 40px;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.about_typo .typo01 {
+  transform: translateY(-220px);
+}
+
+.about_typo .typo02 {
+  transform: translateY(180px);
+}
+
+.footer-wrap {
+  position: absolute;
+  transform: translateY(-100%);
+}
+
 .item_title {
   display: flex;
   justify-content: center;
@@ -4218,8 +4349,8 @@ input[type=checkbox] {
   padding-top: 1.875rem;
   padding-bottom: 1.875rem;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
-  margin: 0 auto;
 }
 
 .itemlist .item_list ul {
@@ -4227,7 +4358,7 @@ input[type=checkbox] {
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   gap: 20px;
 }
 
@@ -4253,6 +4384,7 @@ input[type=checkbox] {
 .items {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
   padding-top: 4.375rem;
   padding-bottom: 4.375rem;
@@ -4260,20 +4392,21 @@ input[type=checkbox] {
 
 .items ul {
   display: flex;
+  max-width: 800px;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .card {
   width: 20vh;
-  border: 1px solid #ddd;
+  padding: 5px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .desc {
   padding: 10px 0;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: "pretendard";
   font-weight: 50;
 }/*# sourceMappingURL=styles.css.map */
