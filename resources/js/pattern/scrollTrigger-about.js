@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
       scrub: 1,
       pin: "about_pin01",
       start: "top top",
-      end: "+=800%",
+      end: "+=700%",
     },
   });
   tl.to(".about_bg", { height: "-10", duration: 1 });

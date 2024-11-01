@@ -328,6 +328,8 @@
   justify-content: center;
   margin-top: 20%;
   margin-bottom: 20%;
+  display: inline-block; /* 필수로 설정해야 기울기가 적용됨 */
+  transform: skewX(-13deg);
 }
 .story .inner.typo02 {
   display: flex;
@@ -336,6 +338,8 @@
   justify-content: center;
   margin-top: 20%;
   margin-bottom: 20%;
+  display: inline-block; /* 필수로 설정해야 기울기가 적용됨 */
+  transform: skewX(-13deg);
 }
 
 .story .innwrap1 {
@@ -357,7 +361,9 @@
 }
 
 .story .typo04 {
-  font-family: pretendard;
+  font-family: "pretendard";
+  display: inline-block; /* 필수로 설정해야 기울기가 적용됨 */
+  transform: skewX(-13deg);
 }
 
 .story .txt.txt01 {
@@ -377,7 +383,7 @@
   font-size: 15px;
   margin-left: 10vw;
   margin-right: 10vw;
-  font-family: pretendard;
+  font-family: "pretendard";
 }
 .txt.txt02 {
   flex: 1;
@@ -397,7 +403,7 @@
   margin-left: 10vw;
   margin-right: 10vw;
   margin-bottom: 10%;
-  font-family: pretendard;
+  font-family: "pretendard";
 }
 
 .story .typo {
@@ -439,14 +445,14 @@
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  font-family: pretendard;
+  font-family: "pretendard";
 }
 
 .swiper-wrapper em {
   display: block;
   text-align: center;
   font-size: 12px;
-  font-family: pretendard;
+  font-family: "pretendard";
   padding-left: 1%;
   padding-right: 1%;
 }
@@ -455,6 +461,7 @@
   margin-top: 10%;
   margin-bottom: 10%;
   text-align: center;
+  font-family: Cormorant;
 }
 
 .sec-bs {
@@ -514,14 +521,14 @@
   flex: 1;
   margin-left: auto;
   font-size: 12px;
-  font-family: pretendard;
+  font-family: "pretendard";
 }
 
 .footer-c {
   width: 100%;
   display: block;
   font-size: 12px;
-  font-family: pretendard;
+  font-family: "pretendard";
 }
 
 .sns {

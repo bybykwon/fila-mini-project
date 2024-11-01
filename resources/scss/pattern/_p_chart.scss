@@ -1,8 +1,69 @@
-.itemlist {
-  padding-top: 70px;
-  padding-bottom: 70px;
+.item_title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "Cormorant";
+  font-weight: 100;
 }
-.itemlist .item_list {
-  max-width: 90%;
-  margin: auto;
+
+.itemlist {
+  display: flex;
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.itemlist .item_list ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 50px;
+  gap: 20px;
+}
+.itemlist .item_list2 ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 50px;
+  gap: 20px;
+}
+
+.itemlist .item_list li a {
+  display: inline-block;
+  font-family: "Cormorant";
+}
+.itemlist .item_list2 li a {
+  display: block;
+  font-family: "pretendard";
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 4.375rem;
+  padding-bottom: 4.375rem;
+}
+
+.items ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 20vh;
+  border: 1px solid #ddd;
+  object-fit: cover;
+}
+
+.desc {
+  padding: 10px 0;
+  font-size: 14px;
+  font-family: "pretendard";
+  font-weight: 50;
 }

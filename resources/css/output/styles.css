@@ -3808,6 +3808,8 @@ input[type=checkbox] {
   justify-content: center;
   margin-top: 20%;
   margin-bottom: 20%;
+  display: inline-block; /* 필수로 설정해야 기울기가 적용됨 */
+  transform: skewX(-13deg);
 }
 
 .story .inner.typo02 {
@@ -3817,6 +3819,8 @@ input[type=checkbox] {
   justify-content: center;
   margin-top: 20%;
   margin-bottom: 20%;
+  display: inline-block; /* 필수로 설정해야 기울기가 적용됨 */
+  transform: skewX(-13deg);
 }
 
 .story .innwrap1 {
@@ -3840,7 +3844,9 @@ input[type=checkbox] {
 }
 
 .story .typo04 {
-  font-family: pretendard;
+  font-family: "pretendard";
+  display: inline-block; /* 필수로 설정해야 기울기가 적용됨 */
+  transform: skewX(-13deg);
 }
 
 .story .txt.txt01 {
@@ -3862,7 +3868,7 @@ input[type=checkbox] {
   font-size: 15px;
   margin-left: 10vw;
   margin-right: 10vw;
-  font-family: pretendard;
+  font-family: "pretendard";
 }
 
 .txt.txt02 {
@@ -3885,7 +3891,7 @@ input[type=checkbox] {
   margin-left: 10vw;
   margin-right: 10vw;
   margin-bottom: 10%;
-  font-family: pretendard;
+  font-family: "pretendard";
 }
 
 .story .typo {
@@ -3939,14 +3945,14 @@ input[type=checkbox] {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  font-family: pretendard;
+  font-family: "pretendard";
 }
 
 .swiper-wrapper em {
   display: block;
   text-align: center;
   font-size: 12px;
-  font-family: pretendard;
+  font-family: "pretendard";
   padding-left: 1%;
   padding-right: 1%;
 }
@@ -3955,6 +3961,7 @@ input[type=checkbox] {
   margin-top: 10%;
   margin-bottom: 10%;
   text-align: center;
+  font-family: Cormorant;
 }
 
 .sec-bs {
@@ -4014,14 +4021,14 @@ input[type=checkbox] {
   flex: 1;
   margin-left: auto;
   font-size: 12px;
-  font-family: pretendard;
+  font-family: "pretendard";
 }
 
 .footer-c {
   width: 100%;
   display: block;
   font-size: 12px;
-  font-family: pretendard;
+  font-family: "pretendard";
 }
 
 .sns {
@@ -4137,7 +4144,7 @@ input[type=checkbox] {
   display: inline-block;
   margin-top: 20px;
   padding: 7px 20px;
-  background: rgba(0, 0, 0, 0.4);
+  background: #002046;
   color: #fff;
 }
 .slide-intro .swiper-slide img {
@@ -4196,4 +4203,77 @@ input[type=checkbox] {
 }
 .slide-studio .swiper-pagination {
   bottom: -50px;
+}
+
+.item_title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "Cormorant";
+  font-weight: 100;
+}
+
+.itemlist {
+  display: flex;
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.itemlist .item_list ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 50px;
+  gap: 20px;
+}
+
+.itemlist .item_list2 ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 50px;
+  gap: 20px;
+}
+
+.itemlist .item_list li a {
+  display: inline-block;
+  font-family: "Cormorant";
+}
+
+.itemlist .item_list2 li a {
+  display: block;
+  font-family: "pretendard";
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 4.375rem;
+  padding-bottom: 4.375rem;
+}
+
+.items ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 20vh;
+  border: 1px solid #ddd;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.desc {
+  padding: 10px 0;
+  font-size: 14px;
+  font-family: "pretendard";
+  font-weight: 50;
 }/*# sourceMappingURL=styles.css.map */

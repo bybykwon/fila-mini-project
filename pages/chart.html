@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>chart : krds</title>
+    <title>krds</title>
     <meta property="og:type" content="website" />
     <meta property="og:title" content="페이지 제목" />
     <meta property="og:description" content="페이지 설명" />
@@ -19,10 +19,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
-		<link rel="stylesheet" href="../resources/css/output/styles.css" />
+    <link rel="stylesheet" href="../resources/css/output/styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+		
     <!-- js -->
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="../resources/js/pattern/scrollTrigger.js"></script>
     <script defer src="../resources/js/pattern/ui-swiper.js"></script>
     <script defer src="../resources/js/pattern/ui-pattern-script.js"></script>
     <script defer src="../resources/js/include.js"></script>
@@ -38,47 +45,45 @@
         <div class="inner">
           <h1 id="logo">
             <a href="#">
-              <span>Fila</span>
+              <span>FILA</span>
             </a>
           </h1>
           <nav id="gnb" class="gnb">
             <ul class="gnb__depth1">
               <li>
                 <a href="#">
-                  <span>menu1</span>
+                  <span>WOMEN</span>
                 </a>
                 <ul class="gnb__depth2">
-                  <li><a href="#">menu1-1</a></li>
-                  <li><a href="#">menu1-2</a></li>
-                  <li><a href="#">menu1-3</a></li>
-                  <li><a href="#">menu1-4</a></li>
+                  <li><a href="#">의류</a></li>
+                  <li><a href="#">전체보기</a></li>
+                  <li><a href="#">패딩/다운점퍼</a></li>
+                  <li><a href="#">바람막이/집업</a></li>
+                  <li><a href="#">맨투맨/후드티</a></li>
                 </ul>
               </li>
               <li>
-                <a href="#"><span>menu2</span></a>
+                <a href="#"><span>MEN</span></a>
                 <ul class="gnb__depth2">
-                  <li><a href="#">menu2-1</a></li>
-                  <li><a href="#">menu2-2</a></li>
-                  <li><a href="#">menu2-3</a></li>
-                  <li><a href="#">menu2-4</a></li>
+                  <li><a href="#">신발</a></li>
+									<li><a href="#">전체보기</a></li>
+									<li><a href="#">라이프스타일</a></li>
+									<li><a href="#">러닝</a></li>
+									<li><a href="#">샌들/슬리퍼</a></li>
                 </ul>
               </li>
               <li>
-                <a href="#"><span>menu3</span></a>
+                <a href="#"><span>KIDS</span></a>
                 <ul class="gnb__depth2">
-                  <li><a href="#">menu3-1</a></li>
-                  <li><a href="#">menu3-2</a></li>
-                  <li><a href="#">menu3-3</a></li>
-                  <li><a href="#">menu3-4</a></li>
+                  <li><a href="#">언더웨어</a></li>
+                 
                 </ul>
               </li>
               <li>
-                <a href="#"><span>menu4</span></a>
+                <a href="#"><span>BRAND</span></a>
                 <ul class="gnb__depth2">
-                  <li><a href="#">menu4-1</a></li>
-                  <li><a href="#">menu4-2</a></li>
-                  <li><a href="#">menu4-3</a></li>
-                  <li><a href="#">menu4-4</a></li>
+                  <li><a href="#">스포츠</a></li>
+                  
                 </ul>
               </li>
             </ul>
@@ -104,62 +109,63 @@
         <nav id="nav-all" class="">
           <ul class="gnb__depth1">
             <li>
+							<p><button class="close"><a href="#" class="closeicon"></a></button></p>
               <a href="#">
-                <span>menu1</span>
-              </a>
+								
+               <strong><span>Women</span></strong></a>
               <ul class="gnb__depth2">
-                <li><a href="#">menu1-1</a></li>
-                <li><a href="#">menu1-2</a></li>
-                <li><a href="#">menu1-3</a></li>
-                <li><a href="#">menu1-4</a></li>
+                <li><a href="#">의류</a></li>
+                <li><a href="#">신발</a></li>
+                <li><a href="#">용품</a></li>
+                <li><a href="#">언더웨어</a></li>
+                <li><a href="#">스포츠</a></li>
               </ul>
             </li>
+						<br>
             <li>
-              <a href="#"><span>menu2</span></a>
+              <a href="#"><strong><span>Men</span></strong></a>
               <ul class="gnb__depth2">
-                <li><a href="#">menu2-1</a></li>
-                <li><a href="#">menu2-2</a></li>
-                <li><a href="#">menu2-3</a></li>
-                <li><a href="#">menu2-4</a></li>
+								<li><a href="#">의류</a></li>
+                <li><a href="#">신발</a></li>
+                <li><a href="#">용품</a></li>
+                <li><a href="#">언더웨어</a></li>
+                <li><a href="#">스포츠</a></li>
               </ul>
             </li>
+						<br>
             <li>
-              <a href="#"><span>menu3</span></a>
+              <a href="#"><strong><span>Kids</span></strong></a>
               <ul class="gnb__depth2">
-                <li><a href="#">menu3-1</a></li>
-                <li><a href="#">menu3-2</a></li>
-                <li><a href="#">menu3-3</a></li>
-                <li><a href="#">menu3-4</a></li>
+                <li><a href="#">의류</a></li>
+                <li><a href="#">신발</a></li>
+                <li><a href="#">용품</a></li>
               </ul>
             </li>
-            <li>
-              <a href="#"><span>menu4</span></a>
-              <ul class="gnb__depth2">
-                <li><a href="#">menu4-1</a></li>
-                <li><a href="#">menu4-2</a></li>
-                <li><a href="#">menu4-3</a></li>
-                <li><a href="#">menu4-4</a></li>
-              </ul>
+						<br>
+						<li>
+              <a href="#"><strong><span>로그인</span></strong></a>
+              <a href="#"><span>가입하기</span></a>       
             </li>
-          </ul>
-
+					</ul>
+					<br>
           <button class="close">
-            <span class="closeicon">전체메뉴 닫기</span>
+            <span>닫기</span>
           </button>
-        </nav>
+				</nav>
       </header>
-          <div class="itemlist">
-						<div class="itme_title"><h1>Products</h1></div>
-					
-						<div class="item_list">
-							<ul>
-								<li><a href="#">New&Featured</a></li>
-								<li><a href="#">Clothes</a></li>
-								<li><a href="#">Shoes</a></li>
-								<li><a href="#">Underwear</a></li>
-								<li><a href="#">Spots</a></li>
-							</ul>
-						<div class="item_list2">
+
+		<div class="lsls">
+				<div class="item_title"><h1>PRODUCTS</h1></div><br>
+	          <div class="itemlist">
+									<div class="item_list">
+								<ul>
+									<li><a href="#">New&Featured</a></li><li><a href="#">Clothes</a></li>
+									<li><a href="#">Shoes</a></li>
+									<li><a href="#">Underwear</a></li>
+									<li><a href="#">Spots</a></li>
+							</ul>  
+						</div>
+						<span class="item_list2">
 							<ul>
 								<li><a href="#">라이프스타일</a></li>
 								<li><a href="#">헤리티지</a></li>
@@ -169,14 +175,98 @@
 								<li><a href="#">슬랜트샷</a></li>
 								<li><a href="#">에샤페</a></li>
 							</ul>
-						</div>
-          </div>
-					<div class="items">
-						<div class="card">
-
-						</div>
+						</span>
 					</div>
-        </section>
+							
+				<div class="items">
+						<ul>
+							<li><div class="card">
+								<div class="thumb">
+									<img src="../resources/images/photos/shoes/shoes1.jpg" alt="">
+								</div>
+								<div class="desc">
+									<p class="name">휠라 에샤페 LX</p>
+									<p>109,000원</p>
+								</div>
+							</div></li>
+						
+							<li><div class="card">
+								<div class="thumb">
+									<img src="../resources/images/photos/shoes/shoes3.jpg" alt="">
+								</div>
+								<div class="desc">
+									<p class="name">휠라 에샤페 LX</p>
+									<p>109,000원</p>
+								</div>
+							</div></li>
+							
+							<li><div class="card">
+								<div class="thumb">
+									<img src="../resources/images/photos/shoes/shoes5.jpg" alt="">
+								</div>
+								<div class="desc">
+									<p class="name">휠라 에샤페 LX</p>
+									<p>109,000원</p>
+								</div>
+							</div></li>
+							
+							<li><div class="card">
+								<div class="thumb">
+									<img src="../resources/images/photos/shoes/shoes7.jpg" alt="">
+								</div>
+								<div class="desc">
+									<p class="name">휠라 에샤페 LX</p>
+									<p>109,000원</p>
+								</div>
+							</div></li>
+							
+							<li><div class="card">
+								<div class="thumb">
+									<img src="../resources/images/photos/shoes/shoes9.jpg" alt="">
+								</div>
+								<div class="desc">
+									<p class="name">휠라 에샤페 LX</p>
+									<p>109,000원</p>
+								</div>
+							</div></li>
+							
+							<li><div class="card">
+								<div class="thumb">
+									<img src="../resources/images/photos/shoes/shoes11.jpg" alt="">
+								</div>
+								<div class="desc">
+									<p class="name">휠라 에샤페 LX</p>
+									<p>109,000원</p>
+								</div>
+							</div></li>
+							
+							<li><div class="card">
+								<div class="thumb">
+									<img src="../resources/images/photos/shoes/shoes13.jpg" alt="">
+								</div>
+								<div class="desc">
+									<p class="name">휠라 에샤페 LX</p>
+									<p>109,000원</p>
+								</div>
+							</div></li>
+
+							<li><div class="card">
+								<div class="thumb">
+									<img src="../resources/images/photos/shoes/shoes15.jpg" alt="">
+								</div>
+								<div class="desc">
+									<p class="name">휠라 에샤페 LX</p>
+									<p>109,000원</p>
+								</div>
+							</div></li>
+
+						</ul>
+				</div>
+				</div>
+        
+			
+			
+			</section>
       </main>
       <footer id="footer" include-html="./layout/footer.html"></footer>
     </div>
