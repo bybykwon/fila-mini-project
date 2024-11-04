@@ -3939,7 +3939,7 @@ input[type=checkbox] {
 }
 
 .swiper-wrapper {
-  max-height: 750px;
+  max-height: 640px !important;
 }
 
 .swiper-wrapper strong {
@@ -4004,7 +4004,7 @@ input[type=checkbox] {
   height: 0;
   padding-bottom: 50%;
   width: auto;
-  height: 641.44px;
+  height: 640px;
   background-color: black;
 }
 
