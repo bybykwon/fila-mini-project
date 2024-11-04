@@ -4016,6 +4016,10 @@ input[type=checkbox] {
   height: 100%;
 }
 
+.footer {
+  margin-top: 30px;
+}
+
 #footer-inner {
   display: flex;
   flex-wrap: wrap;
@@ -4129,7 +4133,7 @@ input[type=checkbox] {
 .swiper-pagination {
   position: static !important;
   --swiper-theme-color: #002053;
-  margin: 5px 0 0 5px;
+  margin: 0px 0 0 20px;
   text-align: left !important;
 }
 
