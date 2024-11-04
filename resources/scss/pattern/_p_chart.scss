@@ -4,6 +4,8 @@
   text-align: center;
   font-family: "Cormorant";
   font-weight: 100;
+  padding: 20px;
+  margin-top: 20px;
 }
 
 .itemlist {
@@ -20,7 +22,7 @@
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   gap: 20px;
 }
 .itemlist .item_list2 ul {
@@ -52,20 +54,34 @@
 
 .items ul {
   display: flex;
-  max-width: 1000px;
+  min-width: 768px;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .card {
-  width: 20vh;
+  width: 20vw;
   padding: 5px;
   object-fit: cover;
   // border: 1px solid #ddd;
 }
+@media (max-width: 768px) {
+  .card {
+    width: 50vw;
+    padding: 0%;
+    object-fit: cover;
+  }
+  .items ul {
+    padding: 0;
+  }
+  .inner {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+}
 
 .desc {
-  padding: 10px 0;
+  padding: 10px 0 0 10px;
   font-size: 0.875rem;
   font-family: "pretendard";
   font-weight: 50;

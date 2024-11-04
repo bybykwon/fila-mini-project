@@ -4205,18 +4205,18 @@ input[type=checkbox] {
   bottom: -50px;
 }
 
-.about_inner {
+.about_story .about_inner {
   max-width: 1240px;
   position: relative;
   height: 100%;
 }
 
-.about_pinA {
+.about_story .about_pinA {
   height: 100vh;
   overflow: hidden;
 }
 
-.about_bg {
+.about_story .about_bg {
   position: absolute;
   left: 0;
   top: 50%;
@@ -4228,14 +4228,14 @@ input[type=checkbox] {
   overflow: hidden;
 }
 
-.about_bg img {
+.about_story .about_bg img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.about_bg2 {
+.about_story .about_bg2 {
   width: 100%;
   height: 100vh;
   position: absolute;
@@ -4244,7 +4244,7 @@ input[type=checkbox] {
   z-index: -2;
 }
 
-.about_bg2 img {
+.about_story .about_bg2 img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -4252,7 +4252,7 @@ input[type=checkbox] {
   max-width: 200px;
 }
 
-.about_images {
+.about_story .about_images {
   width: 100%;
   height: 320%;
   position: absolute;
@@ -4263,32 +4263,32 @@ input[type=checkbox] {
   overflow: hidden;
 }
 
-.about_images > img {
+.about_story .about_images > img {
   position: absolute;
   max-width: 300px;
 }
 
-.about_images > img:nth-child(1) {
+.about_story .about_images > img:nth-child(1) {
   right: 40%;
   top: 20%;
 }
 
-.about_images > img:nth-child(2) {
+.about_story .about_images > img:nth-child(2) {
   left: 10%;
   top: 20%;
 }
 
-.about_images > img:nth-child(3) {
+.about_story .about_images > img:nth-child(3) {
   right: 10%;
   top: 30%;
 }
 
-.about_images > img:nth-child(4) {
+.about_story .about_images > img:nth-child(4) {
   right: 30%;
   top: 50%;
 }
 
-.about_images > img:nth-child(5) {
+.about_story .about_images > img:nth-child(5) {
   left: 30%;
   top: 60%;
 }
@@ -4303,7 +4303,7 @@ input[type=checkbox] {
   top: 90%;
 }
 
-.about_typo {
+.about_story .about_typo {
   font-size: 60px;
   line-height: 1;
   position: absolute;
@@ -4331,9 +4331,81 @@ input[type=checkbox] {
   transform: translateY(180px);
 }
 
-.footer-wrap {
+.about_pin-spacer {
+  display: block;
+  margin: 0px;
+  position: relative;
+  overflow: visible;
+  box-sizing: border-box;
+  width: 100%;
+  height: 8766px;
+  padding: 0px 0px 7792px;
+}
+
+.about_pinA {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.rolling {
   position: absolute;
-  transform: translateY(-100%);
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+}
+
+.rolling .txt {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  max-width: 600px;
+  opacity: 0;
+  font-size: 24px;
+  line-height: 1.6;
+  padding-left: 30px;
+  transform: translateX(-50%);
+}
+
+.rolling .txt h3 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.rolling .txt strong {
+  font-weight: 700;
+}
+
+.rolling .txt sub {
+  font-size: 0.8em;
+}
+
+.rolling .txt p {
+  margin-top: 20px;
+}
+
+.rolling .txt:after {
+  content: "";
+  width: 13px;
+  height: 12px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url("/images/main/bullet.png") no-repeat center center/cover;
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+
+.rolling .txt .box {
+  background: #fff;
+  color: #a6a6a6;
+  font-size: 16px;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 20px;
 }
 
 .item_title {
@@ -4342,6 +4414,8 @@ input[type=checkbox] {
   text-align: center;
   font-family: "Cormorant";
   font-weight: 100;
+  padding: 20px;
+  margin-top: 20px;
 }
 
 .itemlist {
@@ -4358,7 +4432,7 @@ input[type=checkbox] {
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   gap: 20px;
 }
 
@@ -4392,20 +4466,35 @@ input[type=checkbox] {
 
 .items ul {
   display: flex;
-  max-width: 800px;
+  min-width: 768px;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .card {
-  width: 20vh;
+  width: 20vw;
   padding: 5px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
+@media (max-width: 768px) {
+  .card {
+    width: 50vw;
+    padding: 0%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .items ul {
+    padding: 0;
+  }
+  .inner {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+}
 .desc {
-  padding: 10px 0;
+  padding: 10px 0 0 10px;
   font-size: 0.875rem;
   font-family: "pretendard";
   font-weight: 50;
