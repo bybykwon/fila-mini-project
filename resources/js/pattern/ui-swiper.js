@@ -4,7 +4,7 @@ var swiper = new Swiper(".slide-intro", {
   loop: true,
   // autoplay: true,
   pagination: {
-    el: ".slide-intro .swiper-pagination",
+    el: ".swiper-pagination",
     clickable: true,
   },
 });
@@ -22,7 +22,7 @@ var swiper = new Swiper(".slide-studio", {
       spaceBetween: 20,
     },
     1024: {
-      slidesPerView: 3,
+      slidesPerView: 5.5,
       spaceBetween: 30,
     },
   },

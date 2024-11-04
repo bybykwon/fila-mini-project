@@ -3803,30 +3803,28 @@ input[type=checkbox] {
 
 .story .inner.typo {
   display: flex;
-  flex-basis: 100%;
+  flex-basis: 90%;
   flex-grow: 1;
   justify-content: center;
   margin-top: 20%;
   margin-bottom: 20%;
-  display: inline-block; /* 필수로 설정해야 기울기가 적용됨 */
   transform: skewX(-13deg);
 }
 
 .story .inner.typo02 {
   display: flex;
-  flex-basis: 100%;
+  flex-basis: 90%;
   flex-grow: 1;
   justify-content: center;
   margin-top: 20%;
   margin-bottom: 20%;
-  display: inline-block; /* 필수로 설정해야 기울기가 적용됨 */
   transform: skewX(-13deg);
 }
 
 .story .innwrap1 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -3940,6 +3938,10 @@ input[type=checkbox] {
   }
 }
 
+.swiper-wrapper {
+  max-height: 750px;
+}
+
 .swiper-wrapper strong {
   display: block;
   text-align: center;
@@ -3997,6 +3999,23 @@ input[type=checkbox] {
   opacity: 1;
 }
 
+.youtube_video {
+  position: relative;
+  height: 0;
+  padding-bottom: 50%;
+  width: auto;
+  height: 641.44px;
+  background-color: black;
+}
+
+.youtube_video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 #footer-inner {
   display: flex;
   flex-wrap: wrap;
@@ -4019,7 +4038,7 @@ input[type=checkbox] {
 .footer-b {
   display: block;
   flex: 1;
-  margin-left: auto;
+  margin: 0 auto;
   font-size: 12px;
   font-family: "pretendard";
 }
@@ -4033,6 +4052,7 @@ input[type=checkbox] {
 
 .sns {
   display: inline;
+  margin-right: 20px;
 }
 
 .sns img {
@@ -4061,10 +4081,6 @@ input[type=checkbox] {
   font-size: 4rem;
   color: #1d1d1d;
   padding: 20px;
-}
-
-:root {
-  --swiper-theme-color: red;
 }
 
 .swiper {
@@ -4110,6 +4126,13 @@ input[type=checkbox] {
   content: "\f137";
 }
 
+.swiper-pagination {
+  position: static !important;
+  --swiper-theme-color: #002053;
+  margin: 5px 0 0 5px;
+  text-align: left !important;
+}
+
 .slide-intro .swiper-slide {
   position: relative;
 }
@@ -4118,8 +4141,8 @@ input[type=checkbox] {
   transform: translate(-50%, -50%);
 }
 .slide-intro .swiper-slide img {
-  -o-object-position: 50% 100%;
-     object-position: 50% 100%;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
 }
 .slide-intro .swiper-slide .text-area {
   position: absolute;
@@ -4478,9 +4501,9 @@ input[type=checkbox] {
      object-fit: cover;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .card {
-    width: 50vw;
+    width: 48vw;
     padding: 0%;
     -o-object-fit: cover;
        object-fit: cover;
@@ -4490,7 +4513,6 @@ input[type=checkbox] {
   }
   .inner {
     flex-wrap: wrap;
-    padding: 0;
   }
 }
 .desc {

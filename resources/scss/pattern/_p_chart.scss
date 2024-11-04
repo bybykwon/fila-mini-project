@@ -65,9 +65,9 @@
   object-fit: cover;
   // border: 1px solid #ddd;
 }
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .card {
-    width: 50vw;
+    width: 48vw;
     padding: 0%;
     object-fit: cover;
   }
@@ -76,7 +76,6 @@
   }
   .inner {
     flex-wrap: wrap;
-    padding: 0;
   }
 }
 

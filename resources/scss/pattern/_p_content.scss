@@ -1,7 +1,4 @@
 // 사이트 컨텐츠 내용
-:root {
-  --swiper-theme-color: red;
-}
 
 // 전역 스타일
 .swiper {
@@ -45,6 +42,13 @@
   }
 }
 
+.swiper-pagination {
+  position: static !important;
+  --swiper-theme-color: #002053;
+  margin: 5px 0 0 5px;
+  text-align: left !important;
+}
+
 .slide-intro {
   .swiper-slide {
     position: relative;
@@ -56,7 +60,7 @@
     }
 
     img {
-      object-position: 50% 100%;
+      object-position: 50% 50%;
     }
     .text-area {
       position: absolute;
