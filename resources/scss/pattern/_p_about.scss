@@ -15,7 +15,7 @@
   top: 50%;
   transform: translateY(-50%);
   width: 100%;
-  height: 400px;
+  height: 500px;
   z-index: -3;
   border-radius: 20px;
   overflow: hidden;
@@ -60,38 +60,77 @@
 }
 
 .about_story .about_images > img:nth-child(1) {
+  top: 0;
   right: 40%;
-  top: 20%;
+  @media (max-width: 480px) {
+    right: 12%;
+  }
 }
 
 .about_story .about_images > img:nth-child(2) {
+  top: 26%;
   left: 10%;
-  top: 20%;
 }
-
 .about_story .about_images > img:nth-child(3) {
-  right: 10%;
-  top: 30%;
+  top: 37%;
+  right: 13%;
+  @media (max-width: 480px) {
+    scale: 0.9;
+    top: 50%;
+    right: 43%;
+  }
 }
-
 .about_story .about_images > img:nth-child(4) {
   right: 30%;
   top: 50%;
+  @media (max-width: 480px) {
+    top: 50%;
+    right: 6%;
+  }
 }
-
 .about_story .about_images > img:nth-child(5) {
-  left: 30%;
   top: 60%;
-}
-
-.about_images > img:nth-child(6) {
   left: 10%;
-  top: 70%;
 }
-
+.about_images > img:nth-child(6) {
+  left: 65%;
+  top: 70%;
+  @media (max-width: 480px) {
+    top: 80%;
+    left: 3%;
+  }
+}
 .about_images > img:nth-child(7) {
+  left: 57%;
+  top: 80%;
+}
+.about_images > img:nth-child(8) {
   left: 40%;
-  top: 90%;
+  top: 100%;
+}
+.about_images > img:nth-child(9) {
+  left: 40%;
+  top: 100%;
+}
+.about_images > img:nth-child(10) {
+  left: 40%;
+  top: 100%;
+}
+.about_images > img:nth-child(11) {
+  left: 40%;
+  top: 100%;
+}
+.about_images > img:nth-child(12) {
+  left: 40%;
+  top: 100%;
+}
+.about_images > img:nth-child(13) {
+  left: 40%;
+  top: 100%;
+}
+.about_images > img:nth-child(14) {
+  left: 40%;
+  top: 100%;
 }
 
 .about_story .about_typo {
@@ -100,27 +139,16 @@
   position: absolute;
   z-index: 1;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(0%);
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: 400px;
+  gap: 500px;
 }
 
-.about_typo span {
-  display: inline-block;
-  font-size: 40px;
-  vertical-align: baseline;
-  white-space: nowrap;
-}
+// .about_typo .typo01 {}
 
-.about_typo .typo01 {
-  transform: translateY(-220px);
-}
-
-.about_typo .typo02 {
-  transform: translateY(180px);
-}
+// .about_typo .typo02 {}
 
 .about_pin-spacer {
   display: block;
@@ -130,7 +158,7 @@
   box-sizing: border-box;
   width: 100%;
   height: 8766px;
-  padding: 0px 0px 7792px;
+  padding: 0px 0px 7700px;
 }
 
 .about_pinA {
@@ -143,12 +171,12 @@
 .rolling {
   position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   left: 0;
   top: 0;
 }
 
-.rolling .txt {
+.rolling .tex {
   position: absolute;
   left: 50%;
   top: 40%;
@@ -160,25 +188,25 @@
   transform: translateX(-50%);
 }
 
-.rolling .txt h3 {
+.rolling .tex h3 {
   font-size: 28px;
   font-weight: 700;
   line-height: 1.3;
 }
 
-.rolling .txt strong {
+.rolling .tex strong {
   font-weight: 700;
 }
 
-.rolling .txt sub {
+.rolling .tex sub {
   font-size: 0.8em;
 }
 
-.rolling .txt p {
+.rolling .tex p {
   margin-top: 20px;
 }
 
-.rolling .txt:after {
+.rolling .tex:after {
   content: "";
   width: 13px;
   height: 12px;
@@ -190,7 +218,7 @@
   top: 10px;
 }
 
-.rolling .txt .box {
+.rolling .tex .box {
   background: #fff;
   color: #a6a6a6;
   font-size: 16px;

@@ -47,6 +47,7 @@
   --swiper-theme-color: #002053;
   margin: 0px 0 0 20px;
   text-align: left !important;
+  overflow-y: scroll;
 }
 
 .slide-intro {
@@ -95,6 +96,7 @@
   }
   .swiper-pagination {
     display: none;
+    overflow-y: scroll;
   }
 }
 
@@ -129,6 +131,7 @@
     }
     .swiper-pagination {
       display: block;
+      overflow-y: scroll;
     }
     .swiper-button-next,
     .swiper-button-prev {
@@ -150,5 +153,6 @@
   }
   .swiper-pagination {
     bottom: -50px;
+    overflow-y: scroll;
   }
 }

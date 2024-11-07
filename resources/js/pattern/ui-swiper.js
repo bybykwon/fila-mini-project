@@ -18,7 +18,7 @@ var swiper = new Swiper(".slide-studio", {
   },
   breakpoints: {
     600: {
-      slidesPerView: 2,
+      slidesPerView: 2.5,
       spaceBetween: 20,
     },
     1024: {

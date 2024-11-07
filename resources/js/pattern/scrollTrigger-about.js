@@ -57,12 +57,12 @@ document.addEventListener("DOMContentLoaded", function () {
   tl.to(".about_typo span", { alpha: 0, duration: 1 });
   tl.to(".abou_typo span", { width: 0, duration: 1 });
   tl.to(".about_typo", { gap: 0, duration: 1, delay: -1 });
-  tl.to(".about_typo", { width: "auto", y: 0, top: "36%", duration: 1 });
+  tl.to(".about_typo", { width: "auto", y: 0, top: "0%", duration: 1 });
   tl.to(".about_bg2", { top: 0, duration: 1, delay: -1 });
   tl.to(".about_txt01", { alpha: 1, y: 0, duration: 1 });
-  tl.to(".about_txt01", { alpha: 0, y: -40, duration: 1 });
+  tl.to(".about_txt01", { alpha: 1, y: -40, duration: 1 });
   tl.to(".about_txt02", { alpha: 1, y: 0, duration: 1 });
-  tl.to(".about_txt02", { alpha: 0, y: -40, duration: 1 });
+  tl.to(".about_txt02", { alpha: 1, y: -40, duration: 1 });
   tl.to(".about_txt03", { alpha: 1, y: 0, duration: 1 });
   tl.to(".about_images", { alpha: 1, delay: -5 });
   tl.to(".about_images", { y: "-70%", duration: 6, delay: -4 });
