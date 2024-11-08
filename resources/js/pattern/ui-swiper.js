@@ -11,10 +11,14 @@ var swiper = new Swiper(".slide-intro", {
 });
 
 var swiper = new Swiper(".slide-studio", {
-  slidesPerView: 1.5,
   direction: "horizontal",
-  autoplay: true,
-  speed: 8e2,
+  slidesPerView: "auto",
+  loop: true,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+  speed: 4000,
   spaceBetween: 5,
   pagination: {
     el: ".slide-studio .swiper-pagination",

@@ -32,13 +32,12 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   tl.to(".bg", { height: "0", duration: 2 });
-  tl.to(".typo01", { x: "100vw", x: -55, y: 0, duration: 4, ease: "power2.inOut" });
-  tl.to(".typo02", { x: "100vw", x: 60, y: 0, duration: 5, ease: "power2.inOut" }, "-=4.5");
+  tl.to(".typo01", { x: "100%", x: -55, y: 0, duration: 4, ease: "power2.inOut" });
+  tl.to(".typo02", { x: "100%", x: 60, y: 0, duration: 5, ease: "power2.inOut" }, "-=4.5");
   // typo01 왼쪽에서 오른쪽 이동 typo02 오른쪽에서 왼쪽 이동, duration:숫자당 1초, 지속시간 ease:가속도를 더하는 효과, -=:delay를 바깥에 쓸수 있다. - 빠르게 + 느리게 = 4.5초 typo02를 4.5초 빠르게 해서 typo01과 typo02 거의 동시에 움직이도록 맞춤.
   tl.to(".typo", { gap: 0, duration: 1, delay: 2 });
   tl.to(".typo", { y: 0, top: "63%", duration: 4 });
-  tl.to(".images", { alpha: 1, delay: -5 });
-  tl.to(".images", { y: "0%", duration: 6, delay: -4 });
+
   tl.to(".typo03", { x: -70, y: 0, duration: 6 });
   tl.to(".typo04", { x: +20, y: 0, duration: 7, delay: -4 });
 });

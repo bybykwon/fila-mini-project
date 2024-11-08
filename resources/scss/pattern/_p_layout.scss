@@ -319,23 +319,28 @@
 }
 
 .story .inner.typo {
+  max-width: 100vw;
   display: flex;
-  flex-basis: 90%;
-  flex-grow: 1;
   justify-content: center;
   margin-top: 20%;
   margin-bottom: 20%;
   transform: skewX(-13deg);
 }
 .story .inner.typo02 {
+  max-width: 100vw;
   display: flex;
-  flex-basis: 90%;
-  flex-grow: 1;
   justify-content: center;
   top: 0;
   left: 0;
   margin-top: 20%;
   margin-bottom: 20%;
+  transform: skewX(-13deg);
+}
+
+.story .typo04 {
+  max-width: 100vw;
+  font-family: "pretendard";
+  display: inline-block; /* 필수로 설정해야 기울기가 적용됨 */
   transform: skewX(-13deg);
 }
 
@@ -355,12 +360,6 @@
     display: flex;
     flex-direction: column-reverse;
   }
-}
-
-.story .typo04 {
-  font-family: "pretendard";
-  display: inline-block; /* 필수로 설정해야 기울기가 적용됨 */
-  transform: skewX(-13deg);
 }
 
 .story .txt {
@@ -458,7 +457,7 @@
 }
 .sec-bs img {
   display: flex;
-  margin-top: 30px;
+  margin-top: 80px;
   width: 100%;
   height: 295px;
   object-fit: cover;
