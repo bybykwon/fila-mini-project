@@ -56,14 +56,23 @@ document.addEventListener("DOMContentLoaded", function () {
   tl.to(".about_typo02", { y: 0, duration: 1, delay: -1 });
   tl.to(".about_typo span", { alpha: 0, duration: 1 });
   tl.to(".abou_typo span", { width: 0, duration: 1 });
-  tl.to(".about_typo", { gap: 0, duration: 1, delay: -1 });
-  tl.to(".about_typo", { width: "auto", y: 0, top: "0%", duration: 1 });
-  tl.to(".about_bg2", { top: 0, duration: 1, delay: -1 });
-  tl.to(".about_txt01", { alpha: 1, y: 0, duration: 1 });
-  tl.to(".about_txt01", { alpha: 1, y: -40, duration: 1 });
-  tl.to(".about_txt02", { alpha: 1, y: 0, duration: 1 });
-  tl.to(".about_txt02", { alpha: 1, y: -40, duration: 1 });
-  tl.to(".about_txt03", { alpha: 1, y: 0, duration: 1 });
-  tl.to(".about_images", { alpha: 1, delay: -5 });
+  tl.to(".about_typo", { gap: 0, duration: 1, delay: -20 });
+  tl.to(".about_typo", { width: "auto", y: 0, top: "0%", duration: 1, delay: -20 });
+  tl.to(".about_images", { scale: 60, duration: 2, autoAlpha: 1 });
   tl.to(".about_images", { y: "-70%", duration: 6, delay: -4 });
+  tl.to(".about_bg2", { top: 0, duration: 1, delay: -1 });
+});
+
+const ani7 = gsap.timeline();
+ani7.from(".about_tex01", { alpha: 0, duration: 1, delay: +20 }).from(".about_tex02", { alpha: 0, duration: 1, delay: +20 }).from(".about_tex03", { alpha: 0, duration: 1, delay: +20 });
+
+ScrollTrigger.create({
+  animation: ani7,
+  trigger: ".pin02",
+  start: "center center",
+  end: "+=6000",
+  scrub: true,
+  pin: true,
+  markers: false,
+  anticipatePin: 1,
 });

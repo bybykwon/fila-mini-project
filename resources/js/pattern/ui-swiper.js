@@ -1,8 +1,9 @@
 var swiper = new Swiper(".slide-intro", {
   slidesPerView: 1,
+  direction: "horizontal",
+  autoplay: true,
   spaceBetween: 5,
   loop: true,
-  // autoplay: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -11,6 +12,9 @@ var swiper = new Swiper(".slide-intro", {
 
 var swiper = new Swiper(".slide-studio", {
   slidesPerView: 1.5,
+  direction: "horizontal",
+  autoplay: true,
+  speed: 8e2,
   spaceBetween: 5,
   pagination: {
     el: ".slide-studio .swiper-pagination",

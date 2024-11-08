@@ -3579,8 +3579,9 @@ input[type=checkbox] {
 }
 #header .inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  justify-content: space-between;
   max-width: none;
   height: 73px;
 }
@@ -3808,6 +3809,7 @@ input[type=checkbox] {
   justify-content: center;
   margin-top: 20%;
   margin-bottom: 20%;
+  transform: skewX(-13deg);
 }
 
 .story .inner.typo02 {
@@ -3815,8 +3817,11 @@ input[type=checkbox] {
   flex-basis: 90%;
   flex-grow: 1;
   justify-content: center;
+  top: 0;
+  left: 0;
   margin-top: 20%;
   margin-bottom: 20%;
+  transform: skewX(-13deg);
 }
 
 .story .innwrap1 {
@@ -3845,48 +3850,26 @@ input[type=checkbox] {
   transform: skewX(-13deg);
 }
 
-.story .txt.txt01 {
+.story .txt {
   flex: 1;
   display: inline-block;
 }
 
-.story .txt.txt01 h3 {
+.txt01 h3,
+.txt02 h3 {
   font-family: "Cormorant";
   text-align: center;
   font-size: 30px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
-.story .txt.txt01 p {
+.txt01 p,
+.txt02 p {
   display: flex;
   text-align: left;
   font-size: 15px;
   margin-left: 10vw;
   margin-right: 10vw;
-  font-family: "pretendard";
-}
-
-.txt.txt02 {
-  flex: 1;
-  display: inline-block;
-}
-
-.txt.txt02 h3 {
-  font-family: "Cormorant";
-  text-align: center;
-  font-size: 30px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.story .txt.txt02 p {
-  display: flex;
-  text-align: left;
-  font-size: 15px;
-  margin-left: 10vw;
-  margin-right: 10vw;
-  margin-bottom: 10%;
   font-family: "pretendard";
 }
 
@@ -3991,6 +3974,7 @@ input[type=checkbox] {
 .sec-bs__cont {
   display: inline-block;
   margin-top: 20px;
+  margin-bottom: 20px;
   padding: 7px 20px;
   border: 1px solid white;
   color: white;
@@ -4134,7 +4118,7 @@ input[type=checkbox] {
 .swiper-pagination {
   position: static !important;
   --swiper-theme-color: #002053;
-  margin: 0px 0 0 20px;
+  padding: 0px 0 0 20px;
   text-align: left !important;
   overflow-y: scroll;
 }
@@ -4395,6 +4379,7 @@ input[type=checkbox] {
 }
 
 .about_story .about_typo {
+  font-family: "Cormorant";
   font-size: 60px;
   line-height: 1;
   position: absolute;
@@ -4426,6 +4411,7 @@ input[type=checkbox] {
 }
 
 .rolling {
+  font-family: "Cormorant";
   position: absolute;
   width: 100%;
   height: 80vh;
@@ -4434,6 +4420,7 @@ input[type=checkbox] {
 }
 
 .rolling .tex {
+  font-family: "Cormorant";
   position: absolute;
   left: 50%;
   top: 40%;
@@ -4446,6 +4433,7 @@ input[type=checkbox] {
 }
 
 .rolling .tex h3 {
+  font-family: "Cormorant";
   font-size: 28px;
   font-weight: 700;
   line-height: 1.3;
@@ -4453,14 +4441,17 @@ input[type=checkbox] {
 
 .rolling .tex strong {
   font-weight: 700;
+  font-family: "Cormorant";
 }
 
 .rolling .tex sub {
   font-size: 0.8em;
+  font-family: "Cormorant";
 }
 
 .rolling .tex p {
   margin-top: 20px;
+  font-family: "Cormorant";
 }
 
 .rolling .tex:after {

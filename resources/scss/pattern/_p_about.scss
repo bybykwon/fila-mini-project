@@ -134,6 +134,7 @@
 }
 
 .about_story .about_typo {
+  font-family: "Cormorant";
   font-size: 60px;
   line-height: 1;
   position: absolute;
@@ -147,7 +148,6 @@
 }
 
 // .about_typo .typo01 {}
-
 // .about_typo .typo02 {}
 
 .about_pin-spacer {
@@ -169,6 +169,7 @@
 }
 
 .rolling {
+  font-family: "Cormorant";
   position: absolute;
   width: 100%;
   height: 80vh;
@@ -177,6 +178,7 @@
 }
 
 .rolling .tex {
+  font-family: "Cormorant";
   position: absolute;
   left: 50%;
   top: 40%;
@@ -189,6 +191,7 @@
 }
 
 .rolling .tex h3 {
+  font-family: "Cormorant";
   font-size: 28px;
   font-weight: 700;
   line-height: 1.3;
@@ -196,14 +199,17 @@
 
 .rolling .tex strong {
   font-weight: 700;
+  font-family: "Cormorant";
 }
 
 .rolling .tex sub {
   font-size: 0.8em;
+  font-family: "Cormorant";
 }
 
 .rolling .tex p {
   margin-top: 20px;
+  font-family: "Cormorant";
 }
 
 .rolling .tex:after {

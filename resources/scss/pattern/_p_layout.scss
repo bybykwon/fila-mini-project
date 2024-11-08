@@ -70,9 +70,7 @@
     &::after {
       content: "\f061";
       @include lineAwesome;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flexcenter;
       width: 40px;
       height: 40px;
       background: $gray-20;
@@ -106,9 +104,8 @@
     transition: all 0.3s;
   }
   .inner {
-    display: flex;
+    @include flexcenter;
     justify-content: space-between;
-    align-items: center;
     max-width: none;
     height: 73px;
     @include tabletMore {
@@ -328,16 +325,18 @@
   justify-content: center;
   margin-top: 20%;
   margin-bottom: 20%;
-  // transform: skewX(-13deg);
+  transform: skewX(-13deg);
 }
 .story .inner.typo02 {
   display: flex;
   flex-basis: 90%;
   flex-grow: 1;
   justify-content: center;
+  top: 0;
+  left: 0;
   margin-top: 20%;
   margin-bottom: 20%;
-  // transform: skewX(-13deg);
+  transform: skewX(-13deg);
 }
 
 .story .innwrap1 {
@@ -364,44 +363,27 @@
   transform: skewX(-13deg);
 }
 
-.story .txt.txt01 {
+.story .txt {
   flex: 1;
   display: inline-block;
 }
-.story .txt.txt01 h3 {
-  font-family: "Cormorant";
-  text-align: center;
-  font-size: 30px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.story .txt.txt01 p {
-  display: flex;
-  text-align: left;
-  font-size: 15px;
-  margin-left: 10vw;
-  margin-right: 10vw;
-  font-family: "pretendard";
-}
-.txt.txt02 {
-  flex: 1;
-  display: inline-block;
-}
-.txt.txt02 h3 {
-  font-family: "Cormorant";
-  text-align: center;
-  font-size: 30px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.story .txt.txt02 p {
-  display: flex;
-  text-align: left;
-  font-size: 15px;
-  margin-left: 10vw;
-  margin-right: 10vw;
-  margin-bottom: 10%;
-  font-family: "pretendard";
+.txt01,
+.txt02 {
+  h3 {
+    font-family: "Cormorant";
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  p {
+    display: flex;
+    text-align: left;
+    font-size: 15px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-family: "pretendard";
+  }
 }
 
 .story .typo {
