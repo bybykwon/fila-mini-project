@@ -41,36 +41,5 @@ document.addEventListener("DOMContentLoaded", function () {
   tl.to(".typo03", { x: -70, y: 0, duration: 6 });
   tl.to(".typo04", { x: +20, y: 0, duration: 7, delay: -4 });
 });
-
-//화면전체에 적용되서 보류
-// gsap.to(".story .images", {
-//   scrollTrigger: {
-//     trigger: ".bg",
-//     start: "top top",
-//     scrub: 3,
-//     duration: 3,
-//   },
-//   width: 350,
-//   height: 490,});
-// // gsap.to(".story .images2", {
-//   scrollTrigger: {
-//     trigger: ".bg",
-//     start: "top center",
-//     scrub: 3,
-//     duration: 3,
-//   },
-//   width: 350,
-//   height: 490,});]
-
-//  보류 // tl.fromTo(
-//   ".txt01",
-//   { y: 20, alpha: 0 }, // 시작 상태: 아래로 20px, 완전히 투명
-//   { y: 0, alpha: 1, duration: 2, ease: "power1.out" } // 부드럽게 올라오며 나타남
-// );
-// tl.to(".txt01", { alpha: 1, duration: 5, delay: 2 });
-// tl.fromTo(
-//   ".txt02",
-//   { y: 20, alpha: 0 }, // 시작 상태: 아래로 20px, 완전히 투명
-//   { y: 0, alpha: 1, duration: 2, ease: "power1.out" } // 부드럽게 올라오며 나타남
-// );
-// tl.to(".txt02", { alpha: 1, duration: 5, delay: 4 });
+let roller = document.querySelector(".rolling-list");
+roller.id = "roller1"; // 아이디부여

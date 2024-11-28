@@ -1,221 +1,270 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
-    <title>krds</title>
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="페이지 제목" />
-    <meta property="og:description" content="페이지 설명" />
-    <meta property="og:image" content="http://www.mysite.com/article/article1_featured_image.jpg" />
-    <meta property="og:url" content="http://www.mysite.com/article/article1.html" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="페이지 제목" />
-    <meta name="twitter:description" content="페이지 설명" />
-    <meta name="twitter:image" content="http://www.mysite.com/article/article1.html" />
-    <meta name="twitter:domain" content="사이트 명" />
-    <link rel="shortcut icon" href="http://www.mysite.com/favicon.ico" />
-    <!-- css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
-    <link rel="stylesheet" href="../resources/css/output/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>about</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+      }
 
-    <!-- js -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script defer src="../resources/js/pattern/scrollTrigger-about.js"></script>
-    <script defer src="../resources/js/pattern/ui-swiper.js"></script>
-    <script defer src="../resources/js/pattern/ui-pattern-script.js"></script>
-    <script defer src="../resources/js/include.js"></script>
+      .section {
+        min-height: 100vh; /* 각 섹션의 최소 높이 */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      .image-row {
+        display: flex;
+        flex-direction: column; /* 기본적으로 세로 정렬 */
+        gap: 40px; /* 이미지 간 간격 */
+        align-items: center; /* 가운데 정렬 */
+        width: 100%;
+      }
+
+      .image-row img {
+        max-width: 80%; /* 가로 크기를 화면의 80%로 제한 */
+        height: auto;
+        border-radius: 8px;
+      }
+
+      .side-by-side {
+        display: flex;
+        width: 100%;
+        max-width: 80%; /* 부모 컨테이너 크기 제한 */
+        gap: 20px; /* 이미지 간 간격 */
+      }
+
+      .side-by-side img {
+        flex: 1; /* 화면의 반씩 차지 */
+        height: auto;
+        height: 10rem;
+        max-height: 12.5rem;
+        border-radius: 8px;
+      }
+      .image-row img {
+        max-width: 100%; /* 모든 이미지는 컨테이너의 최대 크기에 맞춤 */
+        height: auto;
+        border-radius: 8px;
+      }
+
+      /* 좌우로 나뉘는 이미지 그룹 */
+      .side-by-side {
+        display: flex;
+        justify-content: space-between; /* 좌우로 균등 배치 */
+        align-items: center;
+        height: 10rem;
+        max-height: 12.5rem;
+        width: 100%;
+        max-width: 80%; /* 다른 이미지와 동일한 최대 크기 */
+        gap: 10px;
+      }
+
+      .side-by-side img {
+        flex: 1;
+        max-width: 48%; /* 두 이미지가 각각 48%씩 차지 */
+        height: auto; /* 세로 비율 유지 */
+        object-fit: contain; /* 이미지 왜곡 방지 */
+      }
+
+      .image-row p {
+        font-size: 1.2rem;
+        font-family: "pretendard";
+        color: #333;
+        text-align: left;
+        line-height: 1.6;
+        padding: 20px;
+        opacity: 0;
+        transform: translateY(50px); /* 아래에서 시작 */
+      }
+
+      .hidden {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+      .section {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .about_bg {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+      }
+      .about_bg img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        object-position: center;
+        border-radius: 20px;
+      }
+      @media (max-width: 599px) {
+        .about_bg img {
+          display: flex;
+
+          width: 100%;
+          height: 600px;
+          object-fit: cover; /* 이미지를 꽉 채우기 */
+          object-position: center; /* 중앙 정렬 */
+          margin: 0 auto; /* 필요시 추가 */
+        }
+      }
+    </style>
   </head>
+
   <body>
-    <div id="skip-nav">
-      <a href="#gnb">메뉴 바로가기</a>
-      <a href="#container">본문 바로가기</a>
-    </div>
-    <div id="wrap">
-      <!-- active 추가시 depth2 활성화 -->
-      <header id="header" class="">
-        <div class="inner">
-          <h1 id="logo">
-            <a href="#">
-              <span>FILA</span>
-            </a>
-          </h1>
-          <nav id="gnb" class="gnb">
-            <ul class="gnb__depth1">
-              <li>
-                <a href="#">
-                  <span>WOMEN</span>
-                </a>
-                <ul class="gnb__depth2">
-                  <li><a href="#">의류</a></li>
-                  <li><a href="#">전체보기</a></li>
-                  <li><a href="#">패딩/다운점퍼</a></li>
-                  <li><a href="#">바람막이/집업</a></li>
-                  <li><a href="#">맨투맨/후드티</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#"><span>MEN</span></a>
-                <ul class="gnb__depth2">
-                  <li><a href="#">신발</a></li>
-                  <li><a href="#">전체보기</a></li>
-                  <li><a href="#">라이프스타일</a></li>
-                  <li><a href="#">러닝</a></li>
-                  <li><a href="#">샌들/슬리퍼</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#"><span>KIDS</span></a>
-                <ul class="gnb__depth2">
-                  <li><a href="#">언더웨어</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#"><span>BRAND</span></a>
-                <ul class="gnb__depth2">
-                  <li><a href="#">스포츠</a></li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
-          <div class="util">
-            <!-- active 추가시 활성화 -->
-            <div class="lang">
-              <button class="lang__btn">kor</button>
-              <ul class="lang__lst">
-                <li>kor</li>
-                <li>eng</li>
-              </ul>
-            </div>
-            <button class="search">
-              <span class="blind">검색</span>
-            </button>
-            <button class="all-menu">
-              <span class="blind">전체메뉴</span>
-            </button>
-          </div>
-        </div>
-        <!-- active 추가시 활성화 -->
-        <nav id="nav-all" class="">
-          <ul class="gnb__depth1">
-            <li>
-              <a href="#">
-                <strong><span>Women</span></strong></a
-              >
-              <ul class="gnb__depth2">
-                <li><a href="#">의류</a></li>
-                <li><a href="#">신발</a></li>
-                <li><a href="#">용품</a></li>
-                <li><a href="#">언더웨어</a></li>
-                <li><a href="#">스포츠</a></li>
-              </ul>
-            </li>
-            <br />
-            <li>
-              <a href="#"
-                ><strong><span>Men</span></strong></a
-              >
-              <ul class="gnb__depth2">
-                <li><a href="#">의류</a></li>
-                <li><a href="#">신발</a></li>
-                <li><a href="#">용품</a></li>
-                <li><a href="#">언더웨어</a></li>
-                <li><a href="#">스포츠</a></li>
-              </ul>
-            </li>
-            <br />
-            <li>
-              <a href="#"
-                ><strong><span>Kids</span></strong></a
-              >
-              <ul class="gnb__depth2">
-                <li><a href="#">의류</a></li>
-                <li><a href="#">신발</a></li>
-                <li><a href="#">용품</a></li>
-              </ul>
-            </li>
-            <br />
-            <li>
-              <a href="#"
-                ><strong><span>로그인</span></strong></a
-              >
-              <a href="#"><span>가입하기</span></a>
-            </li>
-          </ul>
-          <br />
-          <button class="close">
-            <span class="closeicon">전체메뉴 닫기</span>
-          </button>
-        </nav>
-      </header>
-<!-- PIN -->
-        <div class="about_story">
-          <div class="about_pin-spacer">
-            <div class="about_pinA">
-              <div class="about_inner">
-                <div class="about_typo">  
-									<div class="about_typo01">Fila<span class="about-fontC">...</span></div>	
-									<div class="about_typo02">fall collection<span class="fontC">...</span></div>
-                  </div>
-                </div>
-                <div class="about_bg">
-                  <img src="../resources/images/photos/main2.jpg" alt="Background Image" />
-                </div>
-								<div class="about_bg2">
-									<img src="../resources/images/photos/bg02.png" alt="Background Image" />
-								</div>
-								<div class="about_images">
-                  <img src="../resources/images/photos/storyimage1.png" alt="Story Image 1" />
-                  <img src="../resources/images/photos/storyimage2.png" alt="Story Image 2" />
-                  <img src="../resources/images/photos/storyimage2-1.png" alt="Story Image 2-1" />
-                  <img src="../resources/images/photos/storyimage2-2.png" alt="Story Image 2-2" />
-                  <img src="../resources/images/photos/storyimage3.png" alt="story Image 3"/>
-                  <img src="../resources/images/photos/storyimage3-1.png" alt="story Image 3-1"/>
-                  <img src="../resources/images/photos/storyimage3-2.png" alt="story Image 3-2" />
-                  <img src="../resources/images/photos/storyimage4.png" alt="story Image 4" />
-                  <img src="../resources/images/photos/storyimage5.png" alt="story Image 5" />
-                  <img src="../resources/images/photos/storyimage6.png" alt="story Image 6" />
-                  <img src="../resources/images/photos/storyimage7.png" alt="story Image 7" />
-                  <img src="../resources/images/photos/storyimage7-1.png" alt="story Image 7-1" />
-                  <img src="../resources/images/photos/storyimage7-2.png" alt="story Image 7-2" />
-                  <img src="../resources/images/photos/storyimage8.png" alt="story Image 8" />
-                </div>
+    <!-- 첫 번째 섹션 -->
+    <div class="section">
+      <div class="about_bg">
+        <img src="../resources/images/photos/main2.jpg" alt="Background Image" />
+      </div>
+      <div class="about_overlay"></div>
 
-								<div class="rolling">
-									<div class="tex01">
-										<p class="about_tex01">
-											<strong><한소희 착용> 휠라 인터런</strong><br /><br />
-											휠라에서 새롭게 선보이는 레트로 트렌드가 접목된 클래식 러닝화입니다.<br f/>
-											홀이 큰 메쉬 소재와 신세틱 소재가 어우러진 갑피가 클래식하면서도 고급스러운 무드를 제공하며, 어느 착장에도 어울리는 기본 컬러부터 착장에 포인트를 더할 수 있는 트렌디한 컬러까지 준비되어 있습니다.
-										</p>
-									</div>
-									<div class="tex02">
-										<p class="about_tex02">
-											<strong><한소희 착용> 휠라 에샤페 초코</strong><br /><br />
-											95년 출시된 TERRAIN CRUSHER를 현대적으로 재해석하여 브랜드 헤리티지를 담았습니다.<br />스포티한 라인 패턴을 넣어 고프 코어의 감성을 나타내었으며 측면 로고를 과감히 삭제하여 정제된 무드를 연출하였습니다.
-										</p>
-									</div>
-									<div class="tex03">
-										<p class="about_tex03">
-											<strong><한소희 착용> 휠라 인터런 실버</strong><br /><br />
-											휠라에서 새롭게 선보이는 레트로 트렌드가 접목된 클래식 러닝화입니다.<br />홀이 큰 메쉬 소재와 신세틱 소재가 어우러진 갑피가 클래식하면서도 고급스러운 무드를 제공하며, 어느 착장에도 어울리는 기본 컬러부터 착장에 포인트를 더할 수 있는 트렌디한 컬러까지 준비되어 있습니다.
-										</p>
-              </div>
-
-              
-            </div>
-          </div>
-        </div>
-      </main>
+      <h1>첫 번째 섹션</h1>
     </div>
+
+    <!-- 두 번째 섹션 -->
+    <div class="section">
+      <div class="image-row">
+        <img src="../resources/images/photos/storyimage1.png" alt="Story Image 1" class="hidden" />
+        <img src="../resources/images/photos/storyimage2.png" alt="Story Image 2" class="hidden" />
+        <p class="hidden">
+          <strong><한소희 착용> 휠라 인터런</strong><br />
+          휠라에서 새롭게 선보이는 레트로 트렌드가 접목된 클래식 러닝화입니다.<br />
+          홀이 큰 메쉬 소재와 신세틱 소재가 어우러진 갑피가 클래식하면서도 고급스러운 무드를 제공하며, 어느 착장에도 어울리는 기본 컬러부터 착장에 포인트를 더할 수 있는 트렌디한 컬러까지 준비되어 있습니다.
+        </p>
+        <div class="side-by-side hidden">
+          <img src="../resources/images/photos/storyimage2-1.png" alt="Story Image 2-1" />
+          <img src="../resources/images/photos/storyimage2-2.png" alt="Story Image 2-2" />
+        </div>
+      </div>
+    </div>
+
+    <!-- 세 번째 섹션 -->
+    <div class="section">
+      <div class="image-row">
+        <img src="../resources/images/photos/storyimage3.png" alt="Story Image 3" class="hidden" />
+        <p class="hidden">
+          <strong><한소희 착용> 휠라 에샤페 초코</strong><br />
+          95년 출시된 TERRAIN CRUSHER를 현대적으로 재해석하여 브랜드 헤리티지를 담았습니다. 스포티한 라인 패턴을 넣어 고프 코어의 감성을 나타내었으며 측면 로고를 과감히 삭제하여 정제된 무드를 연출하였습니다.
+        </p>
+        <div class="side-by-side hidden">
+          <img src="../resources/images/photos/storyimage3-1.png" alt="Story Image 3-1" />
+          <img src="../resources/images/photos/storyimage3-2.png" alt="Story Image 3-2" />
+        </div>
+        <img src="../resources/images/photos/storyimage4.png" alt="Story Image 4" class="hidden" />
+        <img src="../resources/images/photos/storyimage5.png" alt="Story Image 5" class="hidden" />
+      </div>
+    </div>
+
+    <!-- 네 번째 섹션 -->
+    <div class="section">
+      <div class="image-row">
+        <img src="../resources/images/photos/storyimage6.png" alt="Story Image 6" class="hidden" />
+        <p class="hidden">
+          <strong><한소희 착용> 휠라 인터런 실버</strong><br />
+          휠라에서 새롭게 선보이는 레트로 트렌드가 접목된 클래식 러닝화입니다. 홀이 큰 메쉬 소재와 신세틱 소재가 어우러진 갑피가 클래식하면서도 고급스러운 무드를 제공하며, 어느 착장에도 어울리는 기본 컬러부터 착장에 포인트를 더할 수 있는 트렌디한 컬러까지 준비되어 있습니다.
+        </p>
+        <div class="side-by-side hidden">
+          <img src="../resources/images/photos/storyimage7-1.png" alt="Story Image 7-1" />
+          <img src="../resources/images/photos/storyimage7-2.png" alt="Story Image 7-2" />
+        </div>
+        <img src="../resources/images/photos/storyimage8.png" alt="Story Image 8" class="hidden" />
+      </div>
+    </div>
+    <footer id="footer" include-html="./layout/footer.html"></footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      // 개별 이미지 및 텍스트 애니메이션
+      gsap.utils.toArray(".hidden").forEach((element) => {
+        gsap.fromTo(
+          element,
+          { opacity: 0, y: 50 }, // 초기 상태
+          {
+            opacity: 1,
+            y: 0, // 최종 상태
+            duration: 0.8,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: element, // 각 요소를 트리거로 설정
+              start: "top 95%", // 화면의 90% 지점에서 시작
+              toggleActions: "restart pause none none",
+            },
+          }
+        );
+      });
+
+      // 동시에 나타나는 이미지 그룹 애니메이션
+      gsap.utils.toArray(".side-by-side").forEach((group) => {
+        gsap.fromTo(
+          group.children,
+          { opacity: 0, y: 50 }, // 초기 상태
+          {
+            opacity: 1,
+            y: 0, // 최종 상태
+            duration: 1,
+            ease: "power2.out",
+            stagger: 0, // 동시 나타남
+            scrollTrigger: {
+              trigger: group,
+              start: "top 90%",
+              toggleActions: "play none none reset",
+            },
+          }
+        );
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        gsap.registerPlugin(ScrollTrigger);
+
+        let tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".section", // 첫 번째 섹션을 기준으로 트리거 설정
+            scrub: 1, // 스크롤에 따라 애니메이션 진행
+            start: "top top", // 섹션의 시작 지점
+            end: "+=100%", // 스크롤 끝나는 지점
+          },
+        });
+        // 배경 이미지가 아래로 이동하고 흰색 덮임 효과 추가
+        // tl.to(".about_bg img", {
+        //   y: "20%", // 이미지가 아래로 이동
+        //   duration: 2, // 애니메이션 지속 시간
+        //   ease: "power2.out",
+        // });
+
+        tl.fromTo(
+          ".about_bg img",
+          {
+            clipPath: "inset(0% 0% 0% 0%)", // 초기 상태: 이미지 전체 표시
+          },
+          {
+            clipPath: "inset(60% 0% 60% 0%)", // 이미지가 위아래로 줄어듦
+            duration: 1, // 지속 시간
+            ease: "power2.out",
+          } // 이전 애니메이션과 겹치도록 설정
+        );
+      });
+    </script>
   </body>
-  <!-- <footer id="footer" include-html="./layout/footer.html"></footer> -->
 </html>

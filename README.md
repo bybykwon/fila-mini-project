@@ -264,8 +264,6 @@ new Swiper(".swiper-container", {
 
 ## GSAP & ScrollToPlugin
 
-https://odada.me/333
-
 [GSAP(The GreenSock Animation Platform)](https://greensock.com/gsap/)은 자바스크립트로 제어하는 타임라인 기반의 애니메이션 라이브러리입니다.
 [ScrollToPlugin](https://greensock.com/scrolltoplugin/)은 스크롤 애니메이션을 지원하는 GSAP 플러그인입니다.
 
