@@ -137,18 +137,18 @@
       #wrap {
         width: 100%;
         height: auto;
-        overflow: hidden;
-        background-color: white;
+        overflow:hidden;
+        background-color: #f9f9f9;
       }
       .wrap-box {
         display: flex;
-        width: 120%;
+        width: 100%;
         overflow: hidden;
-        background-color: white;
-        transform: translate(-60px);
+        background-color: #f9f9f9;
+   
       }
       .wrap-box:nth-child(2) {
-        background-color: antiquewhite;
+        background-color: #f9f9f9;
       }
       .rolling-list {
         display: flex;
@@ -187,16 +187,13 @@
 
       #roller1 {
         animation: rolling1 100s linear infinite;
+				
+				
       }
       #roller2 {
         animation: rolling2 100s linear infinite;
       }
-      #roller3 {
-        animation: rolling1 100s linear infinite reverse;
-      }
-      #roller4 {
-        animation: rolling2 100s linear infinite reverse;
-      }
+			
     </style>
   </head>
 
@@ -215,14 +212,7 @@
             <div class="list">Fila FallCollection</div>
             <div class="list">Fila FallCollection</div>
           </div>
-        </div>
-        <div class="wrap-box">
-          
-          </div>
-          <div class="rolling-list" id="roller4">
-            <div class="list">Fila FallCollection</div>
-            <div class="list">Fila FallCollection</div>
-            <div class="list">Fila FallCollection</div>
+        </div>   
           </div>
         </div>
       </div>
@@ -341,18 +331,13 @@
           },
           {
             clipPath: "inset(60% 0% 60% 0%)", // 이미지가 위아래로 줄어듦
-            duration: 1, // 지속 시간
+            duration: 3, // 지속 시간
             ease: "power2.out",
           }
         );
 
-        tl.to(".filalogo", {
-          x: "-100%", // 왼쪽으로 이동
-          y: "100%", // 아래로 이동
-          duration: 4, // 애니메이션 지속 시간
-          ease: "power2.inOut", // 부드러운 움직임
-        });
-      });
+			
+});
 
       // 롤링 타이틀
       let roller = document.querySelector(".rolling-list");
@@ -369,6 +354,22 @@
 
       roller.classList.add("original");
       clone.classList.add("clone");
+
+			let tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".wrap-box", // wrap-box를 트리거로 설정
+      start: "top 100%", // 화면 상단에서 90% 위치에서 시작
+      end: "top 10%", // wrap-box가 화면 상단 10% 위치에 도달할 때 끝
+      scrub: true, // 스크롤 연동
+    },
+  });
+
+  // wrap-box 상단으로 이동
+  tl.to("#wrap",  {
+    y: "-100%", // 화면 상단으로 이동
+    duration: 2, // 지속 시간
+    ease: "power2.inOut", // 부드러운 이동
+  });
     </script>
   </body>
 </html>
