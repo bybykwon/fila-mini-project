@@ -75,7 +75,7 @@
       }
 
       .image-row p {
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-family: "pretendard";
         color: #333;
         text-align: left;
@@ -127,6 +127,76 @@
           margin: 0 auto; /* 필요시 추가 */
         }
       }
+      /* 롤링 타이틀 */
+      @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rakkas&display=swap");
+      body {
+        font-family: "Kanit", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      #wrap {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        background-color: white;
+      }
+      .wrap-box {
+        display: flex;
+        width: 120%;
+        overflow: hidden;
+        background-color: white;
+        transform: translate(-60px);
+      }
+      .wrap-box:nth-child(2) {
+        background-color: antiquewhite;
+      }
+      .rolling-list {
+        display: flex;
+        flex-shrink: 0;
+      }
+      .list {
+        margin: 0 6px;
+        font-size: 100px;
+        color: transparent;
+        -webkit-text-stroke: #246dae 2px;
+      }
+
+      @keyframes rolling1 {
+        0% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(-100%);
+        }
+        50.01% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes rolling2 {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-200%);
+        }
+      }
+
+      #roller1 {
+        animation: rolling1 100s linear infinite;
+      }
+      #roller2 {
+        animation: rolling2 100s linear infinite;
+      }
+      #roller3 {
+        animation: rolling1 100s linear infinite reverse;
+      }
+      #roller4 {
+        animation: rolling2 100s linear infinite reverse;
+      }
     </style>
   </head>
 
@@ -138,7 +208,24 @@
       </div>
       <div class="about_overlay"></div>
 
-      <h1>첫 번째 섹션</h1>
+      <div id="wrap">
+        <div class="wrap-box">
+          <div class="rolling-list">
+            <div class="list">Fila FallCollection</div>
+            <div class="list">Fila FallCollection</div>
+            <div class="list">Fila FallCollection</div>
+          </div>
+        </div>
+        <div class="wrap-box">
+          
+          </div>
+          <div class="rolling-list" id="roller4">
+            <div class="list">Fila FallCollection</div>
+            <div class="list">Fila FallCollection</div>
+            <div class="list">Fila FallCollection</div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- 두 번째 섹션 -->
@@ -246,13 +333,7 @@
             end: "+=100%", // 스크롤 끝나는 지점
           },
         });
-        // 배경 이미지가 아래로 이동하고 흰색 덮임 효과 추가
-        // tl.to(".about_bg img", {
-        //   y: "20%", // 이미지가 아래로 이동
-        //   duration: 2, // 애니메이션 지속 시간
-        //   ease: "power2.out",
-        // });
-
+        // 흰색 덮임 효과 추가
         tl.fromTo(
           ".about_bg img",
           {
@@ -262,9 +343,32 @@
             clipPath: "inset(60% 0% 60% 0%)", // 이미지가 위아래로 줄어듦
             duration: 1, // 지속 시간
             ease: "power2.out",
-          } // 이전 애니메이션과 겹치도록 설정
+          }
         );
+
+        tl.to(".filalogo", {
+          x: "-100%", // 왼쪽으로 이동
+          y: "100%", // 아래로 이동
+          duration: 4, // 애니메이션 지속 시간
+          ease: "power2.inOut", // 부드러운 움직임
+        });
       });
+
+      // 롤링 타이틀
+      let roller = document.querySelector(".rolling-list");
+      roller.id = "roller1"; // 아이디부여
+
+      let clone = roller.cloneNode(true);
+      // 기본값은 false. 자식 노드까지 복제 할 경우 true
+      clone.id = "roller2";
+      document.querySelector(".wrap-box").appendChild(clone);
+
+      // document.querySelector('#roller1').style.left = '0px';
+      // document.querySelector('#roller2').style.left = document.querySelector('.rolling-list').offsetWidth + 'px';
+      // offsetWidth사용시 css에 position추가
+
+      roller.classList.add("original");
+      clone.classList.add("clone");
     </script>
   </body>
 </html>
