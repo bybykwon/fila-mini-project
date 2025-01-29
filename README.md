@@ -77,8 +77,7 @@ KRDS (https://uiux.egovframe.go.kr/) 템플릿
 - `og:description`: 페이지의 간단한 설명
 - `og:image`: 페이지의 대표 이미지 주소(URL)
 - `og:url`: 페이지 주소(URL)
-<br />
-[더 많은 오픈 그래프 속성 보기](https://ogp.me/)
+<br />[더 많은 오픈 그래프 속성 보기](https://ogp.me/)
 
 ## 트위터 카드(Twitter Cards)
 
