@@ -63,16 +63,6 @@ KRDS (https://uiux.egovframe.go.kr/) 템플릿
 
 웹페이지가 소셜 미디어(페이스북 등)로 공유될 때 우선적으로 활용되는 정보를 지정합니다.
 
-Slack -
-
-<img width="549" alt="image" src="https://github.com/eehd80/-setting/assets/10627436/17b4a0bd-4630-4483-8e82-52c0b4eafdbe">
-
-KakaoTalk -
-
-<img width="246" alt="image" src="https://github.com/eehd80/-setting/assets/10627436/e4eeef46-fe12-410d-bf2e-7037a1b155ae">
-
-[더 많은 오픈 그래프 속성 보기](https://ogp.me/)
-
 ```html
 <meta property="og:type" content="website" />
 <meta property="og:title" content="페이지 제목" />
@@ -87,12 +77,11 @@ KakaoTalk -
 - `og:description`: 페이지의 간단한 설명
 - `og:image`: 페이지의 대표 이미지 주소(URL)
 - `og:url`: 페이지 주소(URL)
+[더 많은 오픈 그래프 속성 보기](https://ogp.me/)
 
 ## 트위터 카드(Twitter Cards)
 
 웹페이지가 소셜 미디어(트위터)로 공유될 때 우선적으로 활용되는 정보를 지정합니다.
-
-[더 많은 트위터 카드 보기](https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started)
 
 ```html
 <meta name="twitter:card" content="summary" />
@@ -108,6 +97,7 @@ KakaoTalk -
 - `twitter:description`: 페이지의 간단한 설명
 - `twitter:image`: 페이지의 대표 이미지 주소(URL)
 - `twitter:url`: 페이지 주소(URL)
+[더 많은 트위터 카드 보기](https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started)
 
 ## Favicon(파비콘, favorites icon)
 
